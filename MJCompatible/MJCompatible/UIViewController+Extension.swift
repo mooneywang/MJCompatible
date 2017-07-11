@@ -53,3 +53,7 @@ extension UIViewControllerProxy {
         return viewController
     }
 }
+
+//extension UIImageView: MJCompatible {
+//
+//}
