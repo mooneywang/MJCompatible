@@ -16,6 +16,7 @@
 		BA54731D1F133E050017B2F7 /* MJCompatibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54731C1F133E050017B2F7 /* MJCompatibleUITests.swift */; };
 		BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */; };
 		BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732D1F133E9E0017B2F7 /* String+Extension.swift */; };
+		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BA54731E1F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJCompatible.swift; sourceTree = "<group>"; };
 		BA54732D1F133E9E0017B2F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */,
 				BA54732D1F133E9E0017B2F7 /* String+Extension.swift */,
+				BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */,
 			);
 			path = MJCompatible;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
 				BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
+				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +534,7 @@
 				BA5473231F133E050017B2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA5473241F133E050017B2F7 /* Build configuration list for PBXNativeTarget "MJCompatibleTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +543,7 @@
 				BA5473261F133E050017B2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA5473271F133E050017B2F7 /* Build configuration list for PBXNativeTarget "MJCompatibleUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +552,7 @@
 				BA5473291F133E050017B2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
