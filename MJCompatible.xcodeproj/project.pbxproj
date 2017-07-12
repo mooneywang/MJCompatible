@@ -18,6 +18,7 @@
 		BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732D1F133E9E0017B2F7 /* String+Extension.swift */; };
 		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 		BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */; };
+		BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BA54732D1F133E9E0017B2F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Compat.swift"; sourceTree = "<group>"; };
+		BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Compat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				BA54732D1F133E9E0017B2F7 /* String+Extension.swift */,
 				BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */,
 				BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */,
+				BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */,
 			);
 			path = MJCompatible;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */,
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
 				BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */,
+				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,

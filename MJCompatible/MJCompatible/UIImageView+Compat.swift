@@ -22,7 +22,7 @@ extension Compat where Base: UIImageView {
 
             if let data = data {
                 DispatchQueue.main.async {
-                    self.base.image = UIImage(data: data)
+                    self.base.image = UIImage(data: data)?.mj.resizeTo(CGSize(width: 50, height: 50))
                 }
             }
 
