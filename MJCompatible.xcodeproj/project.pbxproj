@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA3683751F28335300970770 /* NSData+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3683741F28335300970770 /* NSData+Compat.swift */; };
+		BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BA460A191F3015B50006B873 /* niconiconi.gif */; };
 		BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FC1F133E050017B2F7 /* AppDelegate.swift */; };
 		BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FE1F133E050017B2F7 /* ViewController.swift */; };
 		BA5473021F133E050017B2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473001F133E050017B2F7 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA3683741F28335300970770 /* NSData+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Compat.swift"; sourceTree = "<group>"; };
+		BA460A191F3015B50006B873 /* niconiconi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = niconiconi.gif; sourceTree = "<group>"; };
 		BA5472F91F133E050017B2F7 /* MJCompatible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJCompatible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5472FC1F133E050017B2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA5472FE1F133E050017B2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				BA5472FE1F133E050017B2F7 /* ViewController.swift */,
 				BA5473001F133E050017B2F7 /* Main.storyboard */,
 				BA5473031F133E050017B2F7 /* Assets.xcassets */,
+				BA460A191F3015B50006B873 /* niconiconi.gif */,
 				BA5473051F133E050017B2F7 /* LaunchScreen.storyboard */,
 				BA5473081F133E050017B2F7 /* Info.plist */,
 			);
@@ -144,6 +149,7 @@
 				BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */,
 				BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */,
 				BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */,
+				BA3683741F28335300970770 /* NSData+Compat.swift */,
 			);
 			path = MJCompatible;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */,
 				BA5473071F133E050017B2F7 /* LaunchScreen.storyboard in Resources */,
 				BA5473041F133E050017B2F7 /* Assets.xcassets in Resources */,
 				BA5473021F133E050017B2F7 /* Main.storyboard in Resources */,
@@ -290,6 +297,7 @@
 				BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */,
 				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
+				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
 			);
