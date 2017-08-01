@@ -24,9 +24,17 @@ class ViewController: UIViewController {
         }
 
         // 显示GIF
-        secondImageView.mj.gif(name: "niconiconi")
+        secondImageView.mj.loadGif(name: "niconiconi")
+        secondImageView.mj.startGif()
     }
 
+    @IBAction func startAction(_ sender: UIButton) {
+        secondImageView.mj.startGif()
+    }
+
+    @IBAction func stopAction(_ sender: UIButton) {
+        secondImageView.mj.stopGif()
+    }
 }
 
 
