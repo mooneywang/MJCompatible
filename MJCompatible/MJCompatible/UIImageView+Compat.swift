@@ -17,13 +17,12 @@ extension Compat where Base: UIImageView {
 
         // 设置占位图片
         base.image = placeholder
-
         let imageLoadSession = URLSession(configuration: .default)
         let imageLoadTask = imageLoadSession.dataTask(with: url) { (data, response, error) in
 
             if let data = data {
                 DispatchQueue.main.async {
-                    self.base.image = UIImage(data: data)?.mj.resizeTo(CGSize(width: 50, height: 50))
+                    self.base.image = UIImage(data: data)
                 }
             }
 
@@ -43,6 +42,10 @@ extension Compat where Base: UIImageView {
         guard let data = try? Data(contentsOf: url) else {
             return
         }
+        self.loadGif(data: data)
+    }
+
+    func loadGif(data: Data) {
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
             return
         }
