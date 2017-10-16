@@ -11,29 +11,8 @@ import ImageIO
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var secondImageView: UIImageView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let url = URL(string: "http://mooneywang.github.io/uploads/avatar.png") {
-
-            // 加载网络图片
-            imageView.mj.setImageURL(url: url, placeholder: UIImage(named: "ad01"))
-        }
-
-        // 显示GIF
-        secondImageView.mj.loadGif(name: "niconiconi")
-        secondImageView.mj.startGif()
-    }
-
-    @IBAction func startAction(_ sender: UIButton) {
-        secondImageView.mj.startGif()
-    }
-
-    @IBAction func stopAction(_ sender: UIButton) {
-        secondImageView.mj.stopGif()
     }
 }
 

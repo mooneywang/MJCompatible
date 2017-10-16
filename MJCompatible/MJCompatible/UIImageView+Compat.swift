@@ -33,7 +33,7 @@ extension Compat where Base: UIImageView {
     /**
      UIImageView控件上显示指定GIF图片
      
-     - parameter name: GIF图片名称
+     - parameter name: GIF图片名称，不需要后缀
      */
     func loadGif(name: String) {
         guard let url = Bundle.main.url(forResource: name, withExtension: "gif") else {
@@ -63,12 +63,21 @@ extension Compat where Base: UIImageView {
         self.base.animationDuration = duration
     }
 
-    func startGif() {
-        self.base.startAnimating()
+    func startGif(repeat rep: Bool) {
+        if rep {
+            if !self.base.isAnimating {
+                self.base.startAnimating()
+            }
+        } else {
+            // TODO: GIF单次播放
+
+        }
     }
 
     func stopGif() {
-        self.base.stopAnimating()
+        if self.base.isAnimating {
+            self.base.stopAnimating()
+        }
     }
 
     private func durationForImageAtIndex(_ source: CGImageSource, index: Int) -> TimeInterval {

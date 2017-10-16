@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */; };
 		BA3683751F28335300970770 /* NSData+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3683741F28335300970770 /* NSData+Compat.swift */; };
 		BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BA460A191F3015B50006B873 /* niconiconi.gif */; };
 		BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FC1F133E050017B2F7 /* AppDelegate.swift */; };
@@ -18,6 +19,8 @@
 		BA54731D1F133E050017B2F7 /* MJCompatibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54731C1F133E050017B2F7 /* MJCompatibleUITests.swift */; };
 		BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */; };
 		BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732D1F133E9E0017B2F7 /* String+Extension.swift */; };
+		BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */; };
+		BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6087C01F90B636009E2512 /* CryptUtil.m */; };
 		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 		BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */; };
 		BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */; };
@@ -41,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		BA3683741F28335300970770 /* NSData+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Compat.swift"; sourceTree = "<group>"; };
 		BA460A191F3015B50006B873 /* niconiconi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = niconiconi.gif; sourceTree = "<group>"; };
 		BA5472F91F133E050017B2F7 /* MJCompatible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJCompatible.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,10 @@
 		BA54731E1F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJCompatible.swift; sourceTree = "<group>"; };
 		BA54732D1F133E9E0017B2F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		BA6087BA1F90AB4C009E2512 /* MJCompatible-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJCompatible-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA6087BF1F90B636009E2512 /* CryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptUtil.h; sourceTree = "<group>"; };
+		BA6087C01F90B636009E2512 /* CryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptUtil.m; sourceTree = "<group>"; };
 		BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Compat.swift"; sourceTree = "<group>"; };
 		BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Compat.swift"; sourceTree = "<group>"; };
@@ -111,14 +119,18 @@
 		BA5472FB1F133E050017B2F7 /* MJCompatible */ = {
 			isa = PBXGroup;
 			children = (
+				BA6087BE1F90B636009E2512 /* CryptUtil */,
 				BA54732A1F133E230017B2F7 /* MJCompatible */,
 				BA5472FC1F133E050017B2F7 /* AppDelegate.swift */,
+				BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */,
+				BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */,
 				BA5472FE1F133E050017B2F7 /* ViewController.swift */,
 				BA5473001F133E050017B2F7 /* Main.storyboard */,
 				BA5473031F133E050017B2F7 /* Assets.xcassets */,
 				BA460A191F3015B50006B873 /* niconiconi.gif */,
 				BA5473051F133E050017B2F7 /* LaunchScreen.storyboard */,
 				BA5473081F133E050017B2F7 /* Info.plist */,
+				BA6087BA1F90AB4C009E2512 /* MJCompatible-Bridging-Header.h */,
 			);
 			path = MJCompatible;
 			sourceTree = "<group>";
@@ -152,6 +164,15 @@
 				BA3683741F28335300970770 /* NSData+Compat.swift */,
 			);
 			path = MJCompatible;
+			sourceTree = "<group>";
+		};
+		BA6087BE1F90B636009E2512 /* CryptUtil */ = {
+			isa = PBXGroup;
+			children = (
+				BA6087BF1F90B636009E2512 /* CryptUtil.h */,
+				BA6087C01F90B636009E2512 /* CryptUtil.m */,
+			);
+			path = CryptUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +244,7 @@
 					BA5472F81F133E050017B2F7 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = FT6TJ2J4WY;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					BA54730C1F133E050017B2F7 = {
@@ -295,7 +317,10 @@
 				BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */,
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
 				BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */,
+				BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */,
+				BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */,
 				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
+				BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
 				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
@@ -451,11 +476,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
 				INFOPLIST_FILE = MJCompatible/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MJCompatible/MJCompatible-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -464,11 +492,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
 				INFOPLIST_FILE = MJCompatible/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MJCompatible/MJCompatible-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
