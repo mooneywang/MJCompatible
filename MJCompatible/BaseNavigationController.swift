@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
+//  BaseNavigationController.swift
 //  MJCompatible
 //
-//  Created by Panda on 2017/7/10.
+//  Created by Panda on 2017/10/17.
 //  Copyright © 2017年 MooneyWang. All rights reserved.
 //
 
 import UIKit
-import ImageIO
 
-class ViewController: UIViewController {
+class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 }
-
-

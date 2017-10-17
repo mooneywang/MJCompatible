@@ -69,7 +69,7 @@
         <!--Gif View Controller-->
         <scene sceneID="zkA-Pf-A0e">
             <objects>
-                <viewController storyboardIdentifier="GifViewController" id="HhW-iI-6vc" customClass="GifViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GifViewController" hidesBottomBarWhenPushed="YES" id="HhW-iI-6vc" customClass="GifViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MQc-qe-Bmz"/>
                         <viewControllerLayoutGuide type="bottom" id="cj9-O6-Xut"/>
@@ -100,6 +100,24 @@
             </objects>
             <point key="canvasLocation" x="2271" y="-151"/>
         </scene>
+        <!--Code Scan View Controller-->
+        <scene sceneID="92L-5T-sEg">
+            <objects>
+                <viewController storyboardIdentifier="QRCodeScanViewController" hidesBottomBarWhenPushed="YES" id="5kj-8u-kCO" customClass="QRCodeScanViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ax-T6-k4z"/>
+                        <viewControllerLayoutGuide type="bottom" id="HSU-b2-rFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yPn-5U-pLX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztb-wZ-5rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2903" y="-152"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="udZ-5f-ey4">
             <objects>
@@ -121,7 +139,7 @@
         <!--Demo-->
         <scene sceneID="NAg-ja-MD4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lbj-w6-rxq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lbj-w6-rxq" customClass="BaseNavigationController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Demo" id="2PD-xW-MP9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hmh-XZ-1tK">

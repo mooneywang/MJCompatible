@@ -11,7 +11,6 @@
 		BA3683751F28335300970770 /* NSData+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3683741F28335300970770 /* NSData+Compat.swift */; };
 		BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BA460A191F3015B50006B873 /* niconiconi.gif */; };
 		BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FC1F133E050017B2F7 /* AppDelegate.swift */; };
-		BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FE1F133E050017B2F7 /* ViewController.swift */; };
 		BA5473021F133E050017B2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473001F133E050017B2F7 /* Main.storyboard */; };
 		BA5473041F133E050017B2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5473031F133E050017B2F7 /* Assets.xcassets */; };
 		BA5473071F133E050017B2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473051F133E050017B2F7 /* LaunchScreen.storyboard */; };
@@ -19,11 +18,14 @@
 		BA54731D1F133E050017B2F7 /* MJCompatibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54731C1F133E050017B2F7 /* MJCompatibleUITests.swift */; };
 		BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */; };
 		BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732D1F133E9E0017B2F7 /* String+Extension.swift */; };
+		BA56D5931F948EA30052F82D /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */; };
 		BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */; };
 		BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6087C01F90B636009E2512 /* CryptUtil.m */; };
 		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 		BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */; };
 		BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */; };
+		BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */; };
+		BAFBF8A31F95C18200490232 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAFBF8A21F95C18200490232 /* CodeScan.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,6 @@
 		BA460A191F3015B50006B873 /* niconiconi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = niconiconi.gif; sourceTree = "<group>"; };
 		BA5472F91F133E050017B2F7 /* MJCompatible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJCompatible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5472FC1F133E050017B2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA5472FE1F133E050017B2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA5473011F133E050017B2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA5473031F133E050017B2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5473061F133E050017B2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +63,8 @@
 		BA54731E1F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJCompatible.swift; sourceTree = "<group>"; };
 		BA54732D1F133E9E0017B2F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BA56D58E1F9457E00052F82D /* Page1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Page1.playground; sourceTree = "<group>"; };
+		BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
 		BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		BA6087BA1F90AB4C009E2512 /* MJCompatible-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJCompatible-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA6087BF1F90B636009E2512 /* CryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptUtil.h; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Compat.swift"; sourceTree = "<group>"; };
 		BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Compat.swift"; sourceTree = "<group>"; };
+		BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		BAFBF8A21F95C18200490232 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,14 +124,17 @@
 		BA5472FB1F133E050017B2F7 /* MJCompatible */ = {
 			isa = PBXGroup;
 			children = (
+				BA56D58E1F9457E00052F82D /* Page1.playground */,
 				BA6087BE1F90B636009E2512 /* CryptUtil */,
 				BA54732A1F133E230017B2F7 /* MJCompatible */,
 				BA5472FC1F133E050017B2F7 /* AppDelegate.swift */,
 				BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */,
 				BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */,
-				BA5472FE1F133E050017B2F7 /* ViewController.swift */,
+				BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */,
+				BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */,
 				BA5473001F133E050017B2F7 /* Main.storyboard */,
 				BA5473031F133E050017B2F7 /* Assets.xcassets */,
+				BAFBF8A21F95C18200490232 /* CodeScan.bundle */,
 				BA460A191F3015B50006B873 /* niconiconi.gif */,
 				BA5473051F133E050017B2F7 /* LaunchScreen.storyboard */,
 				BA5473081F133E050017B2F7 /* Info.plist */,
@@ -286,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFBF8A31F95C18200490232 /* CodeScan.bundle in Resources */,
 				BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */,
 				BA5473071F133E050017B2F7 /* LaunchScreen.storyboard in Resources */,
 				BA5473041F133E050017B2F7 /* Assets.xcassets in Resources */,
@@ -316,12 +325,13 @@
 			files = (
 				BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */,
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
-				BA5472FF1F133E050017B2F7 /* ViewController.swift in Sources */,
 				BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */,
 				BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */,
+				BA56D5931F948EA30052F82D /* QRCodeScanViewController.swift in Sources */,
 				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
 				BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
+				BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */,
 				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
@@ -479,6 +489,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
 				INFOPLIST_FILE = MJCompatible/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +506,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
 				INFOPLIST_FILE = MJCompatible/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
