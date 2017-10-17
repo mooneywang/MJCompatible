@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="1567.2" y="-150.67466266866569"/>
         </scene>
-        <!--Gif View Controller-->
+        <!--Gif-->
         <scene sceneID="zkA-Pf-A0e">
             <objects>
-                <viewController storyboardIdentifier="GifViewController" hidesBottomBarWhenPushed="YES" id="HhW-iI-6vc" customClass="GifViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GifViewController" title="Gif" hidesBottomBarWhenPushed="YES" id="HhW-iI-6vc" customClass="GifViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MQc-qe-Bmz"/>
                         <viewControllerLayoutGuide type="bottom" id="cj9-O6-Xut"/>

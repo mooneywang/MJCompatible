@@ -8,3 +8,6 @@ let array1 = ["1", "2", "3", "4", "5", "6"]
 let array2 = array1.map({ Int($0)! }).filter({ return $0 % 2 == 0 })
 print(array1)
 print(array2)
+
+let str1 = "swift is amazing!"
+String(str1.characters.prefix(5))

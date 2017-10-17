@@ -11,6 +11,8 @@ import AVFoundation
 
 class QRCodeScanViewController: UIViewController {
 
+    var torchButton: UIButton?
+
     let detectorFrame = CGRect(x: (UIScreen.main.bounds.width - 160) * 0.5,
                                y: (UIScreen.main.bounds.height - 160) * 0.5,
                                width: 160, height: 160)
@@ -51,7 +53,7 @@ class QRCodeScanViewController: UIViewController {
         isAnimationing = true
         startScanAnimation()
 
-        // 转换捕捉区域坐标
+        // 转换捕捉区域坐标(必须在startRunning()之后)
         let interestRect = capturelayer?.metadataOutputRectOfInterest(for: detectorFrame)
         metaDataOutput.rectOfInterest = interestRect!
     }
@@ -72,6 +74,8 @@ class QRCodeScanViewController: UIViewController {
         captureSession.addInput(input)
         captureSession.addOutput(metaDataOutput)
         metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+
+        // 设置捕捉信息类型为二维码(必须在addOutput之后)
         metaDataOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
     }
 
@@ -90,13 +94,29 @@ class QRCodeScanViewController: UIViewController {
         self.view.addSubview(backButton)
 
         // 闪光灯按钮
-        let torchButton = UIButton(frame: torchButtonRect)
-        torchButton.setBackgroundImage(UIImage(named: "CodeScan.bundle/qrcode_scan_btn_flash_nor"), for: .normal)
-        torchButton.addTarget(self, action: #selector(torchButtonAction), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(torchButton)
+        torchButton = UIButton(frame: torchButtonRect)
+        torchButton?.setBackgroundImage(UIImage(named: "CodeScan.bundle/qrcode_scan_btn_flash_nor"), for: .normal)
+        torchButton?.setBackgroundImage(UIImage(named: "CodeScan.bundle/qrcode_scan_btn_scan_off"), for: .selected)
+        torchButton?.addTarget(self, action: #selector(torchButtonAction), for: UIControlEvents.touchUpInside)
+        if torchButton != nil {
+            self.view.addSubview(torchButton!)
+        }
     }
 
     func backButtonAction() {
+        guard let device = captureDevice else {
+            return
+        }
+        if device.hasTorch {
+            if device.isTorchActive {
+                guard let _ = try? device.lockForConfiguration() else {
+                    return
+                }
+                device.torchMode = AVCaptureTorchMode.off
+                device.unlockForConfiguration()
+                torchButton?.isSelected = false
+            }
+        }
         self.navigationController?.popViewController(animated: true)
     }
 
@@ -114,12 +134,14 @@ class QRCodeScanViewController: UIViewController {
                 }
                 device.torchMode = AVCaptureTorchMode.off
                 device.unlockForConfiguration()
+                torchButton?.isSelected = false
             } else {
                 guard let _ = try? device.lockForConfiguration() else {
                     return
                 }
                 device.torchMode = AVCaptureTorchMode.on
                 device.unlockForConfiguration()
+                torchButton?.isSelected = true
             }
         }
     }
