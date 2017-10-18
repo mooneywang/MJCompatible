@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJScanner
 
 class DemoViewController: UIViewController {
 
@@ -15,10 +16,10 @@ class DemoViewController: UIViewController {
     let tableViewReuseCellID = "DemoListCellID"
 
     var titles: [String] = {
-        return ["GIF", "QRCode Scan"]
+        return ["GIF", "QRCode Scan", "Moody"]
     }()
     var classNames: [String] = {
-        return ["GifViewController", "QRCodeScanViewController"]
+        return ["GifViewController", "QRCodeScanViewController", "MoodsRootViewController"]
     }()
 
     override func viewDidLoad() {
@@ -47,6 +48,10 @@ extension DemoViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         let className = classNames[indexPath.row]
         let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: className)
+        if viewController is ManagedObjectContextSettable {
+            let vc = viewController as! ManagedObjectContextSettable
+            vc.managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        }
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

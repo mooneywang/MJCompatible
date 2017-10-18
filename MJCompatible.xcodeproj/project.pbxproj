@@ -14,36 +14,59 @@
 		BA5473021F133E050017B2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473001F133E050017B2F7 /* Main.storyboard */; };
 		BA5473041F133E050017B2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5473031F133E050017B2F7 /* Assets.xcassets */; };
 		BA5473071F133E050017B2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473051F133E050017B2F7 /* LaunchScreen.storyboard */; };
-		BA5473121F133E050017B2F7 /* MJCompatibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5473111F133E050017B2F7 /* MJCompatibleTests.swift */; };
-		BA54731D1F133E050017B2F7 /* MJCompatibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54731C1F133E050017B2F7 /* MJCompatibleUITests.swift */; };
 		BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */; };
 		BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54732D1F133E9E0017B2F7 /* String+Extension.swift */; };
 		BA56D5931F948EA30052F82D /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */; };
 		BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */; };
+		BA5E003E1F96FCDF00FEBCC3 /* MJScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E003C1F96FCDF00FEBCC3 /* MJScanner.swift */; };
+		BA5E003F1F96FCDF00FEBCC3 /* MJScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E003D1F96FCDF00FEBCC3 /* MJScanView.swift */; };
+		BA5E00421F96FDA100FEBCC3 /* MoodsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00411F96FDA100FEBCC3 /* MoodsRootViewController.swift */; };
+		BA5E00441F96FFEE00FEBCC3 /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00431F96FFEE00FEBCC3 /* MoodsTableViewController.swift */; };
+		BA5E00461F97000900FEBCC3 /* MoodsCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00451F97000900FEBCC3 /* MoodsCameraViewController.swift */; };
+		BA5E004A1F971F9000FEBCC3 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00481F971F9000FEBCC3 /* Moody.xcdatamodeld */; };
+		BA5E004C1F97201E00FEBCC3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E004B1F97201E00FEBCC3 /* Mood.swift */; };
+		BA5E004F1F97228700FEBCC3 /* ManagedObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E004E1F97228700FEBCC3 /* ManagedObjectType.swift */; };
+		BA5E00511F97365F00FEBCC3 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00501F97365F00FEBCC3 /* MoodyStack.swift */; };
+		BA5E00531F973B0700FEBCC3 /* ManagedObjectContextSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00521F973B0700FEBCC3 /* ManagedObjectContextSettable.swift */; };
+		BA5E00561F973EEC00FEBCC3 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5E00551F973EEC00FEBCC3 /* Bugly.framework */; };
+		BA5E00591F973F3B00FEBCC3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5E00581F973F3B00FEBCC3 /* SystemConfiguration.framework */; };
+		BA5E005B1F973F4500FEBCC3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5E005A1F973F4500FEBCC3 /* Security.framework */; };
+		BA5E005D1F973F4E00FEBCC3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5E005C1F973F4E00FEBCC3 /* libz.tbd */; };
+		BA5E00621F97522C00FEBCC3 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00611F97522C00FEBCC3 /* SegueHandler.swift */; };
 		BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6087C01F90B636009E2512 /* CryptUtil.m */; };
 		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 		BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */; };
 		BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */; };
 		BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */; };
 		BAFBF8A31F95C18200490232 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAFBF8A21F95C18200490232 /* CodeScan.bundle */; };
+		BAFBF8BB1F95F38300490232 /* MJScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFBF8AB1F95F38300490232 /* MJScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFBF8BE1F95F38300490232 /* MJScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFBF8A91F95F38300490232 /* MJScanner.framework */; };
+		BAFBF8BF1F95F38300490232 /* MJScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAFBF8A91F95F38300490232 /* MJScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BA54730E1F133E050017B2F7 /* PBXContainerItemProxy */ = {
+		BAFBF8BC1F95F38300490232 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA5472F11F133E050017B2F7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BA5472F81F133E050017B2F7;
-			remoteInfo = MJCompatible;
-		};
-		BA5473191F133E050017B2F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA5472F11F133E050017B2F7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA5472F81F133E050017B2F7;
-			remoteInfo = MJCompatible;
+			remoteGlobalIDString = BAFBF8A81F95F38300490232;
+			remoteInfo = MJScanner;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAFBF8C31F95F38300490232 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAFBF8BF1F95F38300490232 /* MJScanner.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
@@ -55,17 +78,26 @@
 		BA5473031F133E050017B2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5473061F133E050017B2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA5473081F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA54730D1F133E050017B2F7 /* MJCompatibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJCompatibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA5473111F133E050017B2F7 /* MJCompatibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJCompatibleTests.swift; sourceTree = "<group>"; };
-		BA5473131F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA5473181F133E050017B2F7 /* MJCompatibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJCompatibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA54731C1F133E050017B2F7 /* MJCompatibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJCompatibleUITests.swift; sourceTree = "<group>"; };
-		BA54731E1F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJCompatible.swift; sourceTree = "<group>"; };
 		BA54732D1F133E9E0017B2F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BA56D58E1F9457E00052F82D /* Page1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Page1.playground; sourceTree = "<group>"; };
 		BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
 		BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		BA5E003C1F96FCDF00FEBCC3 /* MJScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJScanner.swift; sourceTree = "<group>"; };
+		BA5E003D1F96FCDF00FEBCC3 /* MJScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJScanView.swift; sourceTree = "<group>"; };
+		BA5E00411F96FDA100FEBCC3 /* MoodsRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsRootViewController.swift; sourceTree = "<group>"; };
+		BA5E00431F96FFEE00FEBCC3 /* MoodsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
+		BA5E00451F97000900FEBCC3 /* MoodsCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsCameraViewController.swift; sourceTree = "<group>"; };
+		BA5E00491F971F9000FEBCC3 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
+		BA5E004B1F97201E00FEBCC3 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		BA5E004E1F97228700FEBCC3 /* ManagedObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectType.swift; sourceTree = "<group>"; };
+		BA5E00501F97365F00FEBCC3 /* MoodyStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
+		BA5E00521F973B0700FEBCC3 /* ManagedObjectContextSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectContextSettable.swift; sourceTree = "<group>"; };
+		BA5E00551F973EEC00FEBCC3 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		BA5E00581F973F3B00FEBCC3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BA5E005A1F973F4500FEBCC3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BA5E005C1F973F4E00FEBCC3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BA5E00611F97522C00FEBCC3 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 		BA6087BA1F90AB4C009E2512 /* MJCompatible-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJCompatible-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA6087BF1F90B636009E2512 /* CryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptUtil.h; sourceTree = "<group>"; };
 		BA6087C01F90B636009E2512 /* CryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptUtil.m; sourceTree = "<group>"; };
@@ -74,6 +106,9 @@
 		BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Compat.swift"; sourceTree = "<group>"; };
 		BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		BAFBF8A21F95C18200490232 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		BAFBF8A91F95F38300490232 /* MJScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFBF8AB1F95F38300490232 /* MJScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJScanner.h; sourceTree = "<group>"; };
+		BAFBF8AC1F95F38300490232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,17 +116,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5E005D1F973F4E00FEBCC3 /* libz.tbd in Frameworks */,
+				BA5E005B1F973F4500FEBCC3 /* Security.framework in Frameworks */,
+				BA5E00591F973F3B00FEBCC3 /* SystemConfiguration.framework in Frameworks */,
+				BA5E00561F973EEC00FEBCC3 /* Bugly.framework in Frameworks */,
+				BAFBF8BE1F95F38300490232 /* MJScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA54730A1F133E050017B2F7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA5473151F133E050017B2F7 /* Frameworks */ = {
+		BAFBF8A51F95F38300490232 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				BA5472FB1F133E050017B2F7 /* MJCompatible */,
-				BA5473101F133E050017B2F7 /* MJCompatibleTests */,
-				BA54731B1F133E050017B2F7 /* MJCompatibleUITests */,
+				BAFBF8AA1F95F38300490232 /* MJScanner */,
 				BA5472FA1F133E050017B2F7 /* Products */,
+				BA5E00571F973F3B00FEBCC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,8 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5472F91F133E050017B2F7 /* MJCompatible.app */,
-				BA54730D1F133E050017B2F7 /* MJCompatibleTests.xctest */,
-				BA5473181F133E050017B2F7 /* MJCompatibleUITests.xctest */,
+				BAFBF8A91F95F38300490232 /* MJScanner.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,8 +157,11 @@
 			isa = PBXGroup;
 			children = (
 				BA56D58E1F9457E00052F82D /* Page1.playground */,
+				BA5E00541F973ED200FEBCC3 /* Lib */,
+				BA5E00401F96FD7400FEBCC3 /* Moody */,
 				BA6087BE1F90B636009E2512 /* CryptUtil */,
 				BA54732A1F133E230017B2F7 /* MJCompatible */,
+				BA5E00601F97520C00FEBCC3 /* Helpers */,
 				BA5472FC1F133E050017B2F7 /* AppDelegate.swift */,
 				BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */,
 				BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */,
@@ -143,24 +178,6 @@
 			path = MJCompatible;
 			sourceTree = "<group>";
 		};
-		BA5473101F133E050017B2F7 /* MJCompatibleTests */ = {
-			isa = PBXGroup;
-			children = (
-				BA5473111F133E050017B2F7 /* MJCompatibleTests.swift */,
-				BA5473131F133E050017B2F7 /* Info.plist */,
-			);
-			path = MJCompatibleTests;
-			sourceTree = "<group>";
-		};
-		BA54731B1F133E050017B2F7 /* MJCompatibleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BA54731C1F133E050017B2F7 /* MJCompatibleUITests.swift */,
-				BA54731E1F133E050017B2F7 /* Info.plist */,
-			);
-			path = MJCompatibleUITests;
-			sourceTree = "<group>";
-		};
 		BA54732A1F133E230017B2F7 /* MJCompatible */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +191,63 @@
 			path = MJCompatible;
 			sourceTree = "<group>";
 		};
+		BA5E00401F96FD7400FEBCC3 /* Moody */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E004D1F97226600FEBCC3 /* Core Data Helpers */,
+				BA5E00471F971F7000FEBCC3 /* Model */,
+				BA5E00411F96FDA100FEBCC3 /* MoodsRootViewController.swift */,
+				BA5E00431F96FFEE00FEBCC3 /* MoodsTableViewController.swift */,
+				BA5E00451F97000900FEBCC3 /* MoodsCameraViewController.swift */,
+			);
+			path = Moody;
+			sourceTree = "<group>";
+		};
+		BA5E00471F971F7000FEBCC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E00481F971F9000FEBCC3 /* Moody.xcdatamodeld */,
+				BA5E004B1F97201E00FEBCC3 /* Mood.swift */,
+				BA5E00501F97365F00FEBCC3 /* MoodyStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA5E004D1F97226600FEBCC3 /* Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E004E1F97228700FEBCC3 /* ManagedObjectType.swift */,
+				BA5E00521F973B0700FEBCC3 /* ManagedObjectContextSettable.swift */,
+			);
+			path = "Core Data Helpers";
+			sourceTree = "<group>";
+		};
+		BA5E00541F973ED200FEBCC3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E00551F973EEC00FEBCC3 /* Bugly.framework */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		BA5E00571F973F3B00FEBCC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E005C1F973F4E00FEBCC3 /* libz.tbd */,
+				BA5E005A1F973F4500FEBCC3 /* Security.framework */,
+				BA5E00581F973F3B00FEBCC3 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA5E00601F97520C00FEBCC3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E00611F97522C00FEBCC3 /* SegueHandler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BA6087BE1F90B636009E2512 /* CryptUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +257,29 @@
 			path = CryptUtil;
 			sourceTree = "<group>";
 		};
+		BAFBF8AA1F95F38300490232 /* MJScanner */ = {
+			isa = PBXGroup;
+			children = (
+				BAFBF8AB1F95F38300490232 /* MJScanner.h */,
+				BA5E003C1F96FCDF00FEBCC3 /* MJScanner.swift */,
+				BA5E003D1F96FCDF00FEBCC3 /* MJScanView.swift */,
+				BAFBF8AC1F95F38300490232 /* Info.plist */,
+			);
+			path = MJScanner;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BAFBF8A61F95F38300490232 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFBF8BB1F95F38300490232 /* MJScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BA5472F81F133E050017B2F7 /* MJCompatible */ = {
@@ -193,51 +289,36 @@
 				BA5472F51F133E050017B2F7 /* Sources */,
 				BA5472F61F133E050017B2F7 /* Frameworks */,
 				BA5472F71F133E050017B2F7 /* Resources */,
+				BAFBF8C31F95F38300490232 /* Embed Frameworks */,
+				BA5E005E1F97456500FEBCC3 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAFBF8BD1F95F38300490232 /* PBXTargetDependency */,
 			);
 			name = MJCompatible;
 			productName = MJCompatible;
 			productReference = BA5472F91F133E050017B2F7 /* MJCompatible.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BA54730C1F133E050017B2F7 /* MJCompatibleTests */ = {
+		BAFBF8A81F95F38300490232 /* MJScanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA5473241F133E050017B2F7 /* Build configuration list for PBXNativeTarget "MJCompatibleTests" */;
+			buildConfigurationList = BAFBF8C01F95F38300490232 /* Build configuration list for PBXNativeTarget "MJScanner" */;
 			buildPhases = (
-				BA5473091F133E050017B2F7 /* Sources */,
-				BA54730A1F133E050017B2F7 /* Frameworks */,
-				BA54730B1F133E050017B2F7 /* Resources */,
+				BAFBF8A41F95F38300490232 /* Sources */,
+				BAFBF8A51F95F38300490232 /* Frameworks */,
+				BAFBF8A61F95F38300490232 /* Headers */,
+				BAFBF8A71F95F38300490232 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA54730F1F133E050017B2F7 /* PBXTargetDependency */,
 			);
-			name = MJCompatibleTests;
-			productName = MJCompatibleTests;
-			productReference = BA54730D1F133E050017B2F7 /* MJCompatibleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BA5473171F133E050017B2F7 /* MJCompatibleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA5473271F133E050017B2F7 /* Build configuration list for PBXNativeTarget "MJCompatibleUITests" */;
-			buildPhases = (
-				BA5473141F133E050017B2F7 /* Sources */,
-				BA5473151F133E050017B2F7 /* Frameworks */,
-				BA5473161F133E050017B2F7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA54731A1F133E050017B2F7 /* PBXTargetDependency */,
-			);
-			name = MJCompatibleUITests;
-			productName = MJCompatibleUITests;
-			productReference = BA5473181F133E050017B2F7 /* MJCompatibleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = MJScanner;
+			productName = MJScanner;
+			productReference = BAFBF8A91F95F38300490232 /* MJScanner.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -255,17 +336,11 @@
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					BA54730C1F133E050017B2F7 = {
+					BAFBF8A81F95F38300490232 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = FT6TJ2J4WY;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
-						TestTargetID = BA5472F81F133E050017B2F7;
-					};
-					BA5473171F133E050017B2F7 = {
-						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = FT6TJ2J4WY;
-						ProvisioningStyle = Automatic;
-						TestTargetID = BA5472F81F133E050017B2F7;
 					};
 				};
 			};
@@ -283,8 +358,7 @@
 			projectRoot = "";
 			targets = (
 				BA5472F81F133E050017B2F7 /* MJCompatible */,
-				BA54730C1F133E050017B2F7 /* MJCompatibleTests */,
-				BA5473171F133E050017B2F7 /* MJCompatibleUITests */,
+				BAFBF8A81F95F38300490232 /* MJScanner */,
 			);
 		};
 /* End PBXProject section */
@@ -302,14 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA54730B1F133E050017B2F7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA5473161F133E050017B2F7 /* Resources */ = {
+		BAFBF8A71F95F38300490232 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,6 +385,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA5E005E1F97456500FEBCC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"491afcb2ed\"\n# #\nBUGLY_APP_KEY=\"35b535fd-063b-47ae-8f19-59f72600c623\"\n# #\nBUNDLE_IDENTIFIER=\"MooneyWang.MJCompatible\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n# UPLOAD_DEBUG_SYMBOLS=0\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n\n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n        P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n            P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\n            DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n            echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\n            echo \"-----------------------------\"\n            STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n            echo \"-----------------------------\"\n\n            UPLOAD_RESULT=\"FAILTURE\"\n            echo \"Bugly server response: ${STATUS}\"\n            if [ ! \"${STATUS}\" ]; then\n            echo \"Error: Failed to upload the zip archive file.\"\n            elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n            echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n            UPLOAD_RESULT=\"SUCCESS\"\n            else\n            echo \"Error: Failed to upload the zip archive file to Bugly.\"\n            fi\n\n            #Remove temp dSYM archive\n            #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n            #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\n            if [ \"$?\" -ne 0 ]; then\n            exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n            fi\n\n            echo \"--------------------------------\"\n            echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\n            if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n            echo \"--------------------------------\"\n            echo \"Failed to upload the dSYM\"\n            echo \"Please check the script and try it again.\"\n            fi\n        }\n\n        # .dSYM解析为bSYMBOL文件\n        function dSYMParse() {\n            DSYM_FILE=\"$1\"\n            DSYM_SYMBOL_FILE=\"$2\"\n\n            echo \"--------------------------------\"\n            echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n            (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n            echo \"--------------------------------\"\n\n        }\n\n        # 执行\n        function run() {\n\n            CONFIG_BUGLY_APP_ID=\"$1\"\n            CONFIG_BUGLY_APP_KEY=\"$2\"\n\n            CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n            CONFIG_BUGLY_APP_VERSION=\"$4\"\n            CONFIG_DSYM_SOURCE_DIR=\"$5\"\n            CONFIG_DSYM_DEST_DIR=\"$6\"\n            CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n            # 检查必须参数是否设置\n            if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n            exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n            fi\n\n            if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n            exitWithMessage \"Error: Bugly App ID not defined.\" 0\n            fi\n\n            if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n            exitWithMessage \"Error: Bugly App Key not defined.\" 0\n            fi\n\n            if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n            exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n            fi\n\n            if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n            exitWithMessage \"Error: App Version not defined.\" 0\n            fi\n\n            if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n            fi\n\n            if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n            fi\n\n            if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            mkdir ${CONFIG_DSYM_DEST_DIR}\n            fi\n\n            DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n            IFS=$'\\n'\n\n            echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n            RET=\"F\"\n\n            #\n            for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n            RET=\"T\"\n            echo \"Found dSYM file: $dsymFile\"\n\n            DSYM_FILE_NAME=${dsymFile##*/}\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n                DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\n                if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n                if [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n                rm -f $DSYM_SYMBOL_ZIP_FILE\n                fi\n                # 如果只上传dSYM，直接压缩dSYM目录\n                zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n                else\n                # 使用符号表工具来生成Symbol文件\n                dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n                fi\n\n                # 上传\n                dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n                done\n\n                if [ $RET = \"F\" ]; then\n                exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n                fi\n            }\n\n            # 在Xcode工程中执行\n            function runInXcode(){\n                echo \"Uploading dSYM to Bugly in Xcode ...\"\n\n                echo \"Info.Plist : ${INFOPLIST_FILE}\"\n\n                BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n                BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n                # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n                if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n                BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n                else\n                BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n                fi\n\n                echo \"--------------------------------\"\n                echo \"Prepare application information.\"\n                echo \"--------------------------------\"\n\n                echo \"Product Name: ${PRODUCT_NAME}\"\n                echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n                echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n                echo \"Build: ${BUNDLE_VERSION}\"\n\n                echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n                echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n                echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\n                echo \"--------------------------------\"\n                echo \"Check the arguments ...\"\n\n                ##检查模拟器编译是否允许上传符号\n                if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n                if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否是Release模式编译\n                if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n                if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否Archive操作\n                if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n                if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n                echo \"Archive the package\"\n                else\n                exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n                fi\n                fi\n                \n                #\n                run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n            }\n            \n            # 根据Xcode的环境变量判断是否处于Xcode环境\n            INFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n            \n            BuildInXcode=\"F\"\n            if [ -f \"${INFO_PLIST_FILE}\" ]; then\n            BuildInXcode=\"T\"\n            fi\n            \n            if [ $BuildInXcode = \"T\" ]; then\n            runInXcode\n            else\n            echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n            # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n            BUGLY_APP_ID=\"$1\"\n            BUGLY_APP_KEY=\"$2\"\n            BUNDLE_IDENTIFIER=\"$3\"\n            BUGLY_APP_VERSION=\"$4\"\n            DWARF_DSYM_FOLDER_PATH=\"$5\"\n            SYMBOL_OUTPUT_PATH=\"$6\"\n            UPLOAD_DSYM_ONLY=$7\n            run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\n            fi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA5472F51F133E050017B2F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -325,47 +408,44 @@
 			files = (
 				BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */,
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
+				BA5E004A1F971F9000FEBCC3 /* Moody.xcdatamodeld in Sources */,
+				BA5E00621F97522C00FEBCC3 /* SegueHandler.swift in Sources */,
 				BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */,
 				BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */,
+				BA5E004C1F97201E00FEBCC3 /* Mood.swift in Sources */,
+				BA5E00531F973B0700FEBCC3 /* ManagedObjectContextSettable.swift in Sources */,
 				BA56D5931F948EA30052F82D /* QRCodeScanViewController.swift in Sources */,
+				BA5E004F1F97228700FEBCC3 /* ManagedObjectType.swift in Sources */,
 				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
+				BA5E00421F96FDA100FEBCC3 /* MoodsRootViewController.swift in Sources */,
 				BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */,
+				BA5E00441F96FFEE00FEBCC3 /* MoodsTableViewController.swift in Sources */,
+				BA5E00461F97000900FEBCC3 /* MoodsCameraViewController.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
 				BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */,
 				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,
+				BA5E00511F97365F00FEBCC3 /* MoodyStack.swift in Sources */,
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA5473091F133E050017B2F7 /* Sources */ = {
+		BAFBF8A41F95F38300490232 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA5473121F133E050017B2F7 /* MJCompatibleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA5473141F133E050017B2F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA54731D1F133E050017B2F7 /* MJCompatibleUITests.swift in Sources */,
+				BA5E003F1F96FCDF00FEBCC3 /* MJScanView.swift in Sources */,
+				BA5E003E1F96FCDF00FEBCC3 /* MJScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA54730F1F133E050017B2F7 /* PBXTargetDependency */ = {
+		BAFBF8BD1F95F38300490232 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BA5472F81F133E050017B2F7 /* MJCompatible */;
-			targetProxy = BA54730E1F133E050017B2F7 /* PBXContainerItemProxy */;
-		};
-		BA54731A1F133E050017B2F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA5472F81F133E050017B2F7 /* MJCompatible */;
-			targetProxy = BA5473191F133E050017B2F7 /* PBXContainerItemProxy */;
+			target = BAFBF8A81F95F38300490232 /* MJScanner */;
+			targetProxy = BAFBF8BC1F95F38300490232 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,11 +565,16 @@
 		BA5473221F133E050017B2F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MJCompatible/Lib",
+				);
 				INFOPLIST_FILE = MJCompatible/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,11 +587,16 @@
 		BA5473231F133E050017B2F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MJCompatible/Lib",
+				);
 				INFOPLIST_FILE = MJCompatible/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,61 +605,54 @@
 			};
 			name = Release;
 		};
-		BA5473251F133E050017B2F7 /* Debug */ = {
+		BAFBF8C11F95F38300490232 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
-				INFOPLIST_FILE = MJCompatibleTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MJScanner/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatibleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MJCompatible.app/MJCompatible";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BA5473261F133E050017B2F7 /* Release */ = {
+		BAFBF8C21F95F38300490232 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FT6TJ2J4WY;
-				INFOPLIST_FILE = MJCompatibleTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MJScanner/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatibleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MJCompatible.app/MJCompatible";
-			};
-			name = Release;
-		};
-		BA5473281F133E050017B2F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = FT6TJ2J4WY;
-				INFOPLIST_FILE = MJCompatibleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatibleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = MJCompatible;
-			};
-			name = Debug;
-		};
-		BA5473291F133E050017B2F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = FT6TJ2J4WY;
-				INFOPLIST_FILE = MJCompatibleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatibleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = MJCompatible;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -594,25 +677,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA5473241F133E050017B2F7 /* Build configuration list for PBXNativeTarget "MJCompatibleTests" */ = {
+		BAFBF8C01F95F38300490232 /* Build configuration list for PBXNativeTarget "MJScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA5473251F133E050017B2F7 /* Debug */,
-				BA5473261F133E050017B2F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA5473271F133E050017B2F7 /* Build configuration list for PBXNativeTarget "MJCompatibleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA5473281F133E050017B2F7 /* Debug */,
-				BA5473291F133E050017B2F7 /* Release */,
+				BAFBF8C11F95F38300490232 /* Debug */,
+				BAFBF8C21F95F38300490232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA5E00481F971F9000FEBCC3 /* Moody.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA5E00491F971F9000FEBCC3 /* Moody.xcdatamodel */,
+			);
+			currentVersion = BA5E00491F971F9000FEBCC3 /* Moody.xcdatamodel */;
+			path = Moody.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA5472F11F133E050017B2F7 /* Project object */;
 }

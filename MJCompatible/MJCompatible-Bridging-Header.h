@@ -6,5 +6,6 @@
 #define MJCompatible_Bridging_Header
 
 #import "CryptUtil.h"
+#import <Bugly/Bugly.h>
 
 #endif /* NTTDataBankiOS_Bridge_Header_h */

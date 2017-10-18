@@ -11,3 +11,15 @@ print(array2)
 
 let str1 = "swift is amazing!"
 String(str1.characters.prefix(5))
+
+class Student: NSObject {
+    let name: String
+    let age: Int
+
+    init(name n: String, age a: Int) {
+        name = n
+        age = a
+    }
+}
+
+print(#keyPath(Student.name))
