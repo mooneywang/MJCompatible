@@ -12,7 +12,7 @@ import CoreData
 class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, SegueHandler {
 
     enum SegueIdentifier: String {
-        case embedNavigation = "embedNavigationViewController"
+        case embedTable = "embedTableViewController"
         case embedCamera = "embedCameraViewController"
     }
 
@@ -24,8 +24,8 @@ class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, S
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifier(for: segue) {
-        case .embedNavigation:
-            print("embedNavigation")
+        case .embedTable:
+            print("embedTable")
         case .embedCamera:
             print("embedCamera")
         }

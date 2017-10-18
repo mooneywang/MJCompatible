@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoodsTableViewController: UIViewController {
+class MoodsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
