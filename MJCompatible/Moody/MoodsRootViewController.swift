@@ -11,9 +11,9 @@ import CoreData
 
 class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, SegueHandler {
 
-    enum SegueIdentifier: Int {
-        case embedNavigation = 1//"embedNavigationViewController"
-        case embedCamera = 2//"embedCameraViewController"
+    enum SegueIdentifier: String {
+        case embedNavigation = "embedNavigationViewController"
+        case embedCamera = "embedCameraViewController"
     }
 
     var managedObjectContext: NSManagedObjectContext!
@@ -23,5 +23,11 @@ class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, S
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segueIdentifier(for: segue) {
+        case .embedNavigation:
+            print("embedNavigation")
+        case .embedCamera:
+            print("embedCamera")
+        }
     }
 }
