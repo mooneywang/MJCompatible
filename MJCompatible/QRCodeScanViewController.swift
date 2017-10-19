@@ -19,6 +19,7 @@ class QRCodeScanViewController: UIViewController {
     let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
     let metaDataOutput = AVCaptureMetadataOutput()
     let captureSession = AVCaptureSession()
+    private let queue: DispatchQueue = DispatchQueue(label: "moody.capture-queue")
     let lineImageView = UIImageView(image: UIImage(named: "CodeScan.bundle/qrcode_scan_light_green"))
     var isAnimationing = false
 
@@ -49,13 +50,16 @@ class QRCodeScanViewController: UIViewController {
         self.view.addSubview(lineImageView)
 
         // 开始捕捉
-        captureSession.startRunning()
-        isAnimationing = true
-        startScanAnimation()
+        queue.async {
+            self.captureSession.startRunning()
 
-        // 转换捕捉区域坐标(必须在startRunning()之后)
-        let interestRect = capturelayer?.metadataOutputRectOfInterest(for: detectorFrame)
-        metaDataOutput.rectOfInterest = interestRect!
+            // 转换捕捉区域坐标(必须在startRunning()之后)
+            let interestRect = capturelayer?.metadataOutputRectOfInterest(for: self.detectorFrame)
+            self.metaDataOutput.rectOfInterest = interestRect!
+        }
+
+        self.isAnimationing = true
+        self.startScanAnimation()
     }
 
     override func viewWillAppear(_ animated: Bool) {

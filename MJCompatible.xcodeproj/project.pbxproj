@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1485701F9837D800662FDE /* MoodsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14856D1F9837D800662FDE /* MoodsRootViewController.swift */; };
+		BA1485711F9837D800662FDE /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14856E1F9837D800662FDE /* MoodsTableViewController.swift */; };
+		BA1485731F9837F400662FDE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1485721F9837F400662FDE /* CameraView.swift */; };
+		BA1485771F98411400662FDE /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1485761F98411400662FDE /* CaptureSession.swift */; };
+		BA1485791F98517800662FDE /* MoodsCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1485781F98517800662FDE /* MoodsCameraViewController.swift */; };
 		BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */; };
 		BA3683751F28335300970770 /* NSData+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3683741F28335300970770 /* NSData+Compat.swift */; };
 		BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BA460A191F3015B50006B873 /* niconiconi.gif */; };
@@ -20,9 +25,6 @@
 		BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */; };
 		BA5E003E1F96FCDF00FEBCC3 /* MJScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E003C1F96FCDF00FEBCC3 /* MJScanner.swift */; };
 		BA5E003F1F96FCDF00FEBCC3 /* MJScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E003D1F96FCDF00FEBCC3 /* MJScanView.swift */; };
-		BA5E00421F96FDA100FEBCC3 /* MoodsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00411F96FDA100FEBCC3 /* MoodsRootViewController.swift */; };
-		BA5E00441F96FFEE00FEBCC3 /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00431F96FFEE00FEBCC3 /* MoodsTableViewController.swift */; };
-		BA5E00461F97000900FEBCC3 /* MoodsCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00451F97000900FEBCC3 /* MoodsCameraViewController.swift */; };
 		BA5E004A1F971F9000FEBCC3 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00481F971F9000FEBCC3 /* Moody.xcdatamodeld */; };
 		BA5E004C1F97201E00FEBCC3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E004B1F97201E00FEBCC3 /* Mood.swift */; };
 		BA5E004F1F97228700FEBCC3 /* ManagedObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E004E1F97228700FEBCC3 /* ManagedObjectType.swift */; };
@@ -69,6 +71,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA14856D1F9837D800662FDE /* MoodsRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsRootViewController.swift; sourceTree = "<group>"; };
+		BA14856E1F9837D800662FDE /* MoodsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
+		BA1485721F9837F400662FDE /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		BA1485761F98411400662FDE /* CaptureSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
+		BA1485781F98517800662FDE /* MoodsCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsCameraViewController.swift; sourceTree = "<group>"; };
 		BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		BA3683741F28335300970770 /* NSData+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Compat.swift"; sourceTree = "<group>"; };
 		BA460A191F3015B50006B873 /* niconiconi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = niconiconi.gif; sourceTree = "<group>"; };
@@ -85,9 +92,6 @@
 		BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		BA5E003C1F96FCDF00FEBCC3 /* MJScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJScanner.swift; sourceTree = "<group>"; };
 		BA5E003D1F96FCDF00FEBCC3 /* MJScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJScanView.swift; sourceTree = "<group>"; };
-		BA5E00411F96FDA100FEBCC3 /* MoodsRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsRootViewController.swift; sourceTree = "<group>"; };
-		BA5E00431F96FFEE00FEBCC3 /* MoodsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
-		BA5E00451F97000900FEBCC3 /* MoodsCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsCameraViewController.swift; sourceTree = "<group>"; };
 		BA5E00491F971F9000FEBCC3 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
 		BA5E004B1F97201E00FEBCC3 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		BA5E004E1F97228700FEBCC3 /* ManagedObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectType.swift; sourceTree = "<group>"; };
@@ -134,6 +138,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA14856A1F9837AB00662FDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA1485721F9837F400662FDE /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA14856B1F9837D800662FDE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA14856D1F9837D800662FDE /* MoodsRootViewController.swift */,
+				BA14856E1F9837D800662FDE /* MoodsTableViewController.swift */,
+				BA1485781F98517800662FDE /* MoodsCameraViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BA1485751F9840EE00662FDE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA1485761F98411400662FDE /* CaptureSession.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BA5472F01F133E050017B2F7 = {
 			isa = PBXGroup;
 			children = (
@@ -194,11 +224,11 @@
 		BA5E00401F96FD7400FEBCC3 /* Moody */ = {
 			isa = PBXGroup;
 			children = (
+				BA1485751F9840EE00662FDE /* Helpers */,
 				BA5E004D1F97226600FEBCC3 /* Core Data Helpers */,
 				BA5E00471F971F7000FEBCC3 /* Model */,
-				BA5E00411F96FDA100FEBCC3 /* MoodsRootViewController.swift */,
-				BA5E00431F96FFEE00FEBCC3 /* MoodsTableViewController.swift */,
-				BA5E00451F97000900FEBCC3 /* MoodsCameraViewController.swift */,
+				BA14856A1F9837AB00662FDE /* Views */,
+				BA14856B1F9837D800662FDE /* Controllers */,
 			);
 			path = Moody;
 			sourceTree = "<group>";
@@ -407,20 +437,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */,
+				BA1485711F9837D800662FDE /* MoodsTableViewController.swift in Sources */,
+				BA1485701F9837D800662FDE /* MoodsRootViewController.swift in Sources */,
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
 				BA5E004A1F971F9000FEBCC3 /* Moody.xcdatamodeld in Sources */,
 				BA5E00621F97522C00FEBCC3 /* SegueHandler.swift in Sources */,
 				BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */,
+				BA1485731F9837F400662FDE /* CameraView.swift in Sources */,
 				BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */,
+				BA1485791F98517800662FDE /* MoodsCameraViewController.swift in Sources */,
 				BA5E004C1F97201E00FEBCC3 /* Mood.swift in Sources */,
+				BA1485771F98411400662FDE /* CaptureSession.swift in Sources */,
 				BA5E00531F973B0700FEBCC3 /* ManagedObjectContextSettable.swift in Sources */,
 				BA56D5931F948EA30052F82D /* QRCodeScanViewController.swift in Sources */,
 				BA5E004F1F97228700FEBCC3 /* ManagedObjectType.swift in Sources */,
 				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
-				BA5E00421F96FDA100FEBCC3 /* MoodsRootViewController.swift in Sources */,
 				BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */,
-				BA5E00441F96FFEE00FEBCC3 /* MoodsTableViewController.swift in Sources */,
-				BA5E00461F97000900FEBCC3 /* MoodsCameraViewController.swift in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
 				BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */,
 				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,
