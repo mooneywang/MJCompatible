@@ -9,10 +9,16 @@
 import UIKit
 import AVFoundation
 
+protocol CaptureSessionDelegate: class {
+    func captureSessionDidCapture(_ image: UIImage?)
+}
+
 class CaptureSession: NSObject {
 
     private let session: AVCaptureSession
+    private let photoOutput = AVCapturePhotoOutput()
     private let queue: DispatchQueue = DispatchQueue(label: "moody.capture-queue")
+    fileprivate weak var delegate: CaptureSessionDelegate!
 
     var isAuthorized: Bool {
         return AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .authorized
@@ -21,7 +27,7 @@ class CaptureSession: NSObject {
         return AVCaptureVideoPreviewLayer(session: session)
     }
 
-    override init() {
+    init(_ delegate: CaptureSessionDelegate) {
         session = AVCaptureSession()
         super.init()
         if isAuthorized {
@@ -29,6 +35,7 @@ class CaptureSession: NSObject {
         } else {
             requestAuthorization()
         }
+        self.delegate = delegate
     }
 
     private func setup() {
@@ -40,7 +47,6 @@ class CaptureSession: NSObject {
                 session.addInput(input)
             }
         }
-        let photoOutput = AVCapturePhotoOutput()
         if session.canAddOutput(photoOutput) {
             session.addOutput(photoOutput)
         }
@@ -66,39 +72,25 @@ class CaptureSession: NSObject {
             self.session.stopRunning()
         }
     }
+
+    func takePhoto() {
+        queue.async {
+            self.photoOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+        }
+    }
 }
 
 extension CaptureSession: AVCapturePhotoCaptureDelegate {
 
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishRecordingLivePhotoMovieForEventualFileAt outputFileURL: URL, resolvedSettings: AVCaptureResolvedPhotoSettings) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, didCapturePhotoForResolvedSettings resolvedSettings: AVCaptureResolvedPhotoSettings) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishCaptureForResolvedSettings resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, willBeginCaptureForResolvedSettings resolvedSettings: AVCaptureResolvedPhotoSettings) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, willCapturePhotoForResolvedSettings resolvedSettings: AVCaptureResolvedPhotoSettings) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingLivePhotoToMovieFileAt outputFileURL: URL, duration: CMTime, photoDisplay photoDisplayTime: CMTime, resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
-        print("")
-    }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingRawPhotoSampleBuffer rawSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
-        print("")
+    func capture(_ captureOutput: AVCapturePhotoOutput,
+                 didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?,
+                 previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings,
+                 bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+        var image: UIImage?
+        if let buf = photoSampleBuffer,
+            let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: buf, previewPhotoSampleBuffer: previewPhotoSampleBuffer) {
+            image = UIImage(data: imageData)
+        }
+        self.delegate.captureSessionDidCapture(image)
     }
 }

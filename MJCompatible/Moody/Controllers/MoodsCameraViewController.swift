@@ -8,14 +8,20 @@
 
 import UIKit
 
+protocol MoodsCameraViewControllerDelegate: class {
+    func didCapture(_ image: UIImage?)
+}
+
 class MoodsCameraViewController: UIViewController {
 
     @IBOutlet weak var cameraView: CameraView!
 
-    let captureSession: CaptureSession = CaptureSession()
+    private var captureSession: CaptureSession!
+    weak var delegate: MoodsCameraViewControllerDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        captureSession = CaptureSession(self)
         cameraView.setup(for: captureSession.videoPreviewLayer)
     }
 
@@ -24,20 +30,19 @@ class MoodsCameraViewController: UIViewController {
         captureSession.start()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        captureSession.stop()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func snap(_ sender: UITapGestureRecognizer) {
+        captureSession.takePhoto()
     }
-    */
+}
 
+extension MoodsCameraViewController: CaptureSessionDelegate {
+
+    func captureSessionDidCapture(_ image: UIImage?) {
+        delegate.didCapture(image)
+    }
 }

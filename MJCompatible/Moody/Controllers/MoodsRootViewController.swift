@@ -27,7 +27,17 @@ class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, S
         case .embedTable:
             print("embedTable")
         case .embedCamera:
-            print("embedCamera")
+            guard let vc = segue.destination as? MoodsCameraViewController else {
+                fatalError("must be MoodsCameraViewController")
+            }
+            vc.delegate = self
         }
+    }
+}
+
+extension MoodsRootViewController: MoodsCameraViewControllerDelegate {
+
+    func didCapture(_ image: UIImage?) {
+        print("didCapture \(image!)")
     }
 }

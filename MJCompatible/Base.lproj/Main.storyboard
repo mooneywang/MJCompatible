@@ -233,6 +233,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-bg-6Co" customClass="CameraView" customModule="MJCompatible" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="24S-Ph-ccv" appends="YES" id="9V2-e0-TO0"/>
+                                </connections>
                             </view>
                         </subviews>
                         <constraints>
@@ -247,6 +251,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6c-hV-wmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="24S-Ph-ccv">
+                    <connections>
+                        <action selector="snap:" destination="HOU-Wr-k0D" id="gKk-p4-3Nv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4310" y="84"/>
         </scene>
