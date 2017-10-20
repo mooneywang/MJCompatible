@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 protocol CaptureSessionDelegate: class {
-    func captureSessionDidCapture(_ image: UIImage?)
+    func captureSessionDidCapture(_ image: UIImage)
 }
 
 class CaptureSession: NSObject {
@@ -91,6 +91,8 @@ extension CaptureSession: AVCapturePhotoCaptureDelegate {
             let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: buf, previewPhotoSampleBuffer: previewPhotoSampleBuffer) {
             image = UIImage(data: imageData)
         }
-        self.delegate.captureSessionDidCapture(image)
+        if let image = image {
+            self.delegate.captureSessionDidCapture(image)
+        }
     }
 }

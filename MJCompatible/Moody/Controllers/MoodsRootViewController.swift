@@ -25,7 +25,10 @@ class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, S
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifier(for: segue) {
         case .embedTable:
-            print("embedTable")
+            guard let vc = segue.destination as? MoodsTableViewController else {
+                fatalError("must be MoodsTableViewController")
+            }
+            vc.managedObjectContext = managedObjectContext
         case .embedCamera:
             guard let vc = segue.destination as? MoodsCameraViewController else {
                 fatalError("must be MoodsCameraViewController")
@@ -37,7 +40,11 @@ class MoodsRootViewController: UIViewController, ManagedObjectContextSettable, S
 
 extension MoodsRootViewController: MoodsCameraViewControllerDelegate {
 
-    func didCapture(_ image: UIImage?) {
-        print("didCapture \(image!)")
+    func didCapture(_ image: UIImage) {
+        managedObjectContext.mj.performChanges {
+
+            Mood.insert(into: self.managedObjectContext, image: image)
+            
+        }
     }
 }

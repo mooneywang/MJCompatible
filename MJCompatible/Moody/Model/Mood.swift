@@ -14,6 +14,14 @@ final class Mood: NSManagedObject {
     @NSManaged private(set) var date: Date
     @NSManaged private(set) var colors: [UIColor]
 
+    @discardableResult
+    static func insert(into context: NSManagedObjectContext, image: UIImage) -> Mood {
+        let mood: Mood = context.mj.insertObject()
+        mood.colors = [.red]
+        mood.date = Date()
+        return mood
+    }
+
 }
 
 extension Mood: ManagedObjectType {

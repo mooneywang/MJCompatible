@@ -9,7 +9,7 @@
 import UIKit
 
 protocol MoodsCameraViewControllerDelegate: class {
-    func didCapture(_ image: UIImage?)
+    func didCapture(_ image: UIImage)
 }
 
 class MoodsCameraViewController: UIViewController {
@@ -42,7 +42,7 @@ class MoodsCameraViewController: UIViewController {
 
 extension MoodsCameraViewController: CaptureSessionDelegate {
 
-    func captureSessionDidCapture(_ image: UIImage?) {
+    func captureSessionDidCapture(_ image: UIImage) {
         delegate.didCapture(image)
     }
 }

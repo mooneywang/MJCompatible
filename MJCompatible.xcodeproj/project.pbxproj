@@ -14,6 +14,7 @@
 		BA1485791F98517800662FDE /* MoodsCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1485781F98517800662FDE /* MoodsCameraViewController.swift */; };
 		BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */; };
 		BA3683751F28335300970770 /* NSData+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3683741F28335300970770 /* NSData+Compat.swift */; };
+		BA38EA991F99C0C0008B80E7 /* MJWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */; };
 		BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BA460A191F3015B50006B873 /* niconiconi.gif */; };
 		BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FC1F133E050017B2F7 /* AppDelegate.swift */; };
 		BA5473021F133E050017B2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473001F133E050017B2F7 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6087C01F90B636009E2512 /* CryptUtil.m */; };
 		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 		BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */; };
+		BAA8441A1F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA844191F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift */; };
 		BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */; };
 		BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */; };
 		BAFBF8A31F95C18200490232 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAFBF8A21F95C18200490232 /* CodeScan.bundle */; };
@@ -78,6 +80,7 @@
 		BA1485781F98517800662FDE /* MoodsCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsCameraViewController.swift; sourceTree = "<group>"; };
 		BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		BA3683741F28335300970770 /* NSData+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Compat.swift"; sourceTree = "<group>"; };
+		BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJWebViewController.swift; sourceTree = "<group>"; };
 		BA460A191F3015B50006B873 /* niconiconi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = niconiconi.gif; sourceTree = "<group>"; };
 		BA5472F91F133E050017B2F7 /* MJCompatible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJCompatible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5472FC1F133E050017B2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 		BA6087C01F90B636009E2512 /* CryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptUtil.m; sourceTree = "<group>"; };
 		BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Compat.swift"; sourceTree = "<group>"; };
+		BAA844191F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Compat.swift"; sourceTree = "<group>"; };
 		BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Compat.swift"; sourceTree = "<group>"; };
 		BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		BAFBF8A21F95C18200490232 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */,
 				BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */,
 				BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */,
+				BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */,
 				BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */,
 				BA5473001F133E050017B2F7 /* Main.storyboard */,
 				BA5473031F133E050017B2F7 /* Assets.xcassets */,
@@ -217,6 +222,7 @@
 				BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */,
 				BADE1C5B1F15C06E00B6EACD /* UIImage+Compat.swift */,
 				BA3683741F28335300970770 /* NSData+Compat.swift */,
+				BAA844191F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift */,
 			);
 			path = MJCompatible;
 			sourceTree = "<group>";
@@ -457,8 +463,10 @@
 				BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */,
 				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,
 				BA5E00511F97365F00FEBCC3 /* MoodyStack.swift in Sources */,
+				BA38EA991F99C0C0008B80E7 /* MJWebViewController.swift in Sources */,
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
+				BAA8441A1F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

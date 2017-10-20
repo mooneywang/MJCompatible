@@ -16,10 +16,10 @@ class DemoViewController: UIViewController {
     let tableViewReuseCellID = "DemoListCellID"
 
     var titles: [String] = {
-        return ["GIF", "QRCode Scan", "Moody"]
+        return ["GIF", "QRCode Scan", "Moody", "Web View"]
     }()
     var classNames: [String] = {
-        return ["GifViewController", "QRCodeScanViewController", "MoodsRootViewController"]
+        return ["GifViewController", "QRCodeScanViewController", "MoodsRootViewController", "MJWebViewController"]
     }()
 
     override func viewDidLoad() {
