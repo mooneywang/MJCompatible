@@ -37,6 +37,7 @@
 		BA5E005D1F973F4E00FEBCC3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5E005C1F973F4E00FEBCC3 /* libz.tbd */; };
 		BA5E00621F97522C00FEBCC3 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E00611F97522C00FEBCC3 /* SegueHandler.swift */; };
 		BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6087C01F90B636009E2512 /* CryptUtil.m */; };
+		BA798A6A1F9D9B4800793712 /* AttributedStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA798A691F9D9B4800793712 /* AttributedStringViewController.swift */; };
 		BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */; };
 		BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */; };
 		BAA8441A1F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA844191F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift */; };
@@ -108,6 +109,7 @@
 		BA6087BA1F90AB4C009E2512 /* MJCompatible-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJCompatible-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA6087BF1F90B636009E2512 /* CryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptUtil.h; sourceTree = "<group>"; };
 		BA6087C01F90B636009E2512 /* CryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptUtil.m; sourceTree = "<group>"; };
+		BA798A691F9D9B4800793712 /* AttributedStringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringViewController.swift; sourceTree = "<group>"; };
 		BA83F54D1F1453CC008FC88B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BA83F54F1F1465A9008FC88B /* UIImageView+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Compat.swift"; sourceTree = "<group>"; };
 		BAA844191F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Compat.swift"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */,
 				BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */,
 				BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */,
+				BA798A691F9D9B4800793712 /* AttributedStringViewController.swift */,
 				BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */,
 				BA5473001F133E050017B2F7 /* Main.storyboard */,
 				BA5473031F133E050017B2F7 /* Assets.xcassets */,
@@ -467,6 +470,7 @@
 				BA83F54E1F1453CC008FC88B /* UIViewController+Extension.swift in Sources */,
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
 				BAA8441A1F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift in Sources */,
+				BA798A6A1F9D9B4800793712 /* AttributedStringViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nZW-Ws-SGT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nZW-Ws-SGT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -276,6 +276,43 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4310" y="84"/>
+        </scene>
+        <!--Attributed String View Controller-->
+        <scene sceneID="gen-S7-CKJ">
+            <objects>
+                <viewController storyboardIdentifier="AttributedStringViewController" hidesBottomBarWhenPushed="YES" id="Qio-97-J1n" customClass="AttributedStringViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8xN-d6-4zf"/>
+                        <viewControllerLayoutGuide type="bottom" id="c8M-x7-YBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k6N-HP-dGU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziD-Oz-Qwe">
+                                <rect key="frame" x="16" y="40" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vai-sU-lfC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ziD-Oz-Qwe" firstAttribute="leading" secondItem="k6N-HP-dGU" secondAttribute="leading" constant="16" id="0MZ-R5-bTc"/>
+                            <constraint firstItem="ziD-Oz-Qwe" firstAttribute="top" secondItem="8xN-d6-4zf" secondAttribute="bottom" constant="20" id="QS4-MK-qLH"/>
+                            <constraint firstAttribute="trailing" secondItem="ziD-Oz-Qwe" secondAttribute="trailing" constant="16" id="U2N-te-jYb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="codeLabel" destination="ziD-Oz-Qwe" id="cJI-jJ-dsR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI5-Lb-Afk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="504"/>
         </scene>
         <!--Moods Table View Controller-->
         <scene sceneID="jDb-f6-7Oc">
