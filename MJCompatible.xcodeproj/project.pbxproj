@@ -15,6 +15,8 @@
 		BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */; };
 		BA3683751F28335300970770 /* NSData+Compat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3683741F28335300970770 /* NSData+Compat.swift */; };
 		BA38EA991F99C0C0008B80E7 /* MJWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */; };
+		BA3CAE491FA1AF3600328D3B /* AppCrashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CAE481FA1AF3600328D3B /* AppCrashManager.swift */; };
+		BA3CAE4B1FA1AF9200328D3B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CAE4A1FA1AF9200328D3B /* Extensions.swift */; };
 		BA460A1A1F3015B50006B873 /* niconiconi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BA460A191F3015B50006B873 /* niconiconi.gif */; };
 		BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5472FC1F133E050017B2F7 /* AppDelegate.swift */; };
 		BA5473021F133E050017B2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5473001F133E050017B2F7 /* Main.storyboard */; };
@@ -82,6 +84,8 @@
 		BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		BA3683741F28335300970770 /* NSData+Compat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Compat.swift"; sourceTree = "<group>"; };
 		BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJWebViewController.swift; sourceTree = "<group>"; };
+		BA3CAE481FA1AF3600328D3B /* AppCrashManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCrashManager.swift; sourceTree = "<group>"; };
+		BA3CAE4A1FA1AF9200328D3B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BA460A191F3015B50006B873 /* niconiconi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = niconiconi.gif; sourceTree = "<group>"; };
 		BA5472F91F133E050017B2F7 /* MJCompatible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJCompatible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5472FC1F133E050017B2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +174,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		BA3CAE471FA1AF2900328D3B /* AppCrash */ = {
+			isa = PBXGroup;
+			children = (
+				BA3CAE481FA1AF3600328D3B /* AppCrashManager.swift */,
+				BA3CAE4A1FA1AF9200328D3B /* Extensions.swift */,
+			);
+			path = AppCrash;
+			sourceTree = "<group>";
+		};
 		BA5472F01F133E050017B2F7 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				BA56D58E1F9457E00052F82D /* Page1.playground */,
+				BA3CAE471FA1AF2900328D3B /* AppCrash */,
 				BA5E00541F973ED200FEBCC3 /* Lib */,
 				BA5E00401F96FD7400FEBCC3 /* Moody */,
 				BA6087BE1F90B636009E2512 /* CryptUtil */,
@@ -451,6 +465,7 @@
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
 				BA5E004A1F971F9000FEBCC3 /* Moody.xcdatamodeld in Sources */,
 				BA5E00621F97522C00FEBCC3 /* SegueHandler.swift in Sources */,
+				BA3CAE491FA1AF3600328D3B /* AppCrashManager.swift in Sources */,
 				BA6087C11F90B636009E2512 /* CryptUtil.m in Sources */,
 				BA1485731F9837F400662FDE /* CameraView.swift in Sources */,
 				BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */,
@@ -471,6 +486,7 @@
 				BA54732C1F133E2E0017B2F7 /* MJCompatible.swift in Sources */,
 				BAA8441A1F98AB5D009547A0 /* NSManagedObjectContext+Compat.swift in Sources */,
 				BA798A6A1F9D9B4800793712 /* AttributedStringViewController.swift in Sources */,
+				BA3CAE4B1FA1AF9200328D3B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
