@@ -49,6 +49,8 @@
 		BAFBF8BB1F95F38300490232 /* MJScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFBF8AB1F95F38300490232 /* MJScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFBF8BE1F95F38300490232 /* MJScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFBF8A91F95F38300490232 /* MJScanner.framework */; };
 		BAFBF8BF1F95F38300490232 /* MJScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAFBF8A91F95F38300490232 /* MJScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD234D4422D2430B007F3A91 /* ScrollNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD234D4322D2430B007F3A91 /* ScrollNumberViewController.swift */; };
+		CD234D4822D243AB007F3A91 /* DPScrollNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD234D4622D243AB007F3A91 /* DPScrollNumberLabel.m */; };
 		CDD030D5222C1C6A005CE458 /* PullToRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD030D4222C1C6A005CE458 /* PullToRefreshViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,9 @@
 		BAFBF8A91F95F38300490232 /* MJScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFBF8AB1F95F38300490232 /* MJScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJScanner.h; sourceTree = "<group>"; };
 		BAFBF8AC1F95F38300490232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD234D4322D2430B007F3A91 /* ScrollNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollNumberViewController.swift; sourceTree = "<group>"; };
+		CD234D4622D243AB007F3A91 /* DPScrollNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPScrollNumberLabel.m; sourceTree = "<group>"; };
+		CD234D4722D243AB007F3A91 /* DPScrollNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPScrollNumberLabel.h; sourceTree = "<group>"; };
 		CDD030D4222C1C6A005CE458 /* PullToRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +212,7 @@
 		BA5472FB1F133E050017B2F7 /* MJCompatible */ = {
 			isa = PBXGroup;
 			children = (
+				CD234D4522D243AB007F3A91 /* DPScrollNumberLabel */,
 				BA56D58E1F9457E00052F82D /* Page1.playground */,
 				BA3CAE471FA1AF2900328D3B /* AppCrash */,
 				BA5E00541F973ED200FEBCC3 /* Lib */,
@@ -222,6 +228,7 @@
 				BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */,
 				BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */,
 				BA798A691F9D9B4800793712 /* AttributedStringViewController.swift */,
+				CD234D4322D2430B007F3A91 /* ScrollNumberViewController.swift */,
 				BAFBF8A01F959F3000490232 /* BaseNavigationController.swift */,
 				BA5473001F133E050017B2F7 /* Main.storyboard */,
 				BA5473031F133E050017B2F7 /* Assets.xcassets */,
@@ -325,6 +332,15 @@
 			path = MJScanner;
 			sourceTree = "<group>";
 		};
+		CD234D4522D243AB007F3A91 /* DPScrollNumberLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CD234D4722D243AB007F3A91 /* DPScrollNumberLabel.h */,
+				CD234D4622D243AB007F3A91 /* DPScrollNumberLabel.m */,
+			);
+			path = DPScrollNumberLabel;
+			sourceTree = "<group>";
+		};
 		CDD030D6222C1D7A005CE458 /* PullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +429,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -472,6 +489,7 @@
 			files = (
 				BA83F5501F1465A9008FC88B /* UIImageView+Compat.swift in Sources */,
 				BA1485711F9837D800662FDE /* MoodsTableViewController.swift in Sources */,
+				CD234D4422D2430B007F3A91 /* ScrollNumberViewController.swift in Sources */,
 				BA1485701F9837D800662FDE /* MoodsRootViewController.swift in Sources */,
 				BA54732E1F133E9E0017B2F7 /* String+Extension.swift in Sources */,
 				BA5E004A1F971F9000FEBCC3 /* Moody.xcdatamodeld in Sources */,
@@ -489,6 +507,7 @@
 				BA5E004F1F97228700FEBCC3 /* ManagedObjectType.swift in Sources */,
 				BADE1C5C1F15C06E00B6EACD /* UIImage+Compat.swift in Sources */,
 				BA58A9F11F9067E1006EA6C5 /* GifViewController.swift in Sources */,
+				CD234D4822D243AB007F3A91 /* DPScrollNumberLabel.m in Sources */,
 				BA5472FD1F133E050017B2F7 /* AppDelegate.swift in Sources */,
 				BAFBF8A11F959F3000490232 /* BaseNavigationController.swift in Sources */,
 				BA3683751F28335300970770 /* NSData+Compat.swift in Sources */,

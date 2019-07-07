@@ -7,5 +7,6 @@
 
 #import "CryptUtil.h"
 #import <Bugly/Bugly.h>
+#import "DPScrollNumberLabel.h"
 
 #endif /* NTTDataBankiOS_Bridge_Header_h */
