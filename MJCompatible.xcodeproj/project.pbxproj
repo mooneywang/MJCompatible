@@ -49,6 +49,7 @@
 		BAFBF8BB1F95F38300490232 /* MJScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFBF8AB1F95F38300490232 /* MJScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFBF8BE1F95F38300490232 /* MJScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFBF8A91F95F38300490232 /* MJScanner.framework */; };
 		BAFBF8BF1F95F38300490232 /* MJScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAFBF8A91F95F38300490232 /* MJScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDD030D5222C1C6A005CE458 /* PullToRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD030D4222C1C6A005CE458 /* PullToRefreshViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +96,7 @@
 		BA5473081F133E050017B2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA54732B1F133E2E0017B2F7 /* MJCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJCompatible.swift; sourceTree = "<group>"; };
 		BA54732D1F133E9E0017B2F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		BA56D58E1F9457E00052F82D /* Page1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Page1.playground; sourceTree = "<group>"; };
+		BA56D58E1F9457E00052F82D /* Page1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Page1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
 		BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		BA5E003C1F96FCDF00FEBCC3 /* MJScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJScanner.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		BAFBF8A91F95F38300490232 /* MJScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFBF8AB1F95F38300490232 /* MJScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJScanner.h; sourceTree = "<group>"; };
 		BAFBF8AC1F95F38300490232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD030D4222C1C6A005CE458 /* PullToRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,10 +212,12 @@
 				BA5E00541F973ED200FEBCC3 /* Lib */,
 				BA5E00401F96FD7400FEBCC3 /* Moody */,
 				BA6087BE1F90B636009E2512 /* CryptUtil */,
+				CDD030D6222C1D7A005CE458 /* PullToRefresh */,
 				BA54732A1F133E230017B2F7 /* MJCompatible */,
 				BA5E00601F97520C00FEBCC3 /* Helpers */,
 				BA5472FC1F133E050017B2F7 /* AppDelegate.swift */,
 				BA1FC22A1F83571D0014DD30 /* DemoViewController.swift */,
+				CDD030D4222C1C6A005CE458 /* PullToRefreshViewController.swift */,
 				BA58A9F01F9067E1006EA6C5 /* GifViewController.swift */,
 				BA56D5921F948EA30052F82D /* QRCodeScanViewController.swift */,
 				BA38EA981F99C0C0008B80E7 /* MJWebViewController.swift */,
@@ -321,6 +325,13 @@
 			path = MJScanner;
 			sourceTree = "<group>";
 		};
+		CDD030D6222C1D7A005CE458 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -380,13 +391,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = MooneyWang;
 				TargetAttributes = {
 					BA5472F81F133E050017B2F7 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = FT6TJ2J4WY;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					BAFBF8A81F95F38300490232 = {
@@ -471,6 +482,7 @@
 				BA1FC22B1F83571D0014DD30 /* DemoViewController.swift in Sources */,
 				BA1485791F98517800662FDE /* MoodsCameraViewController.swift in Sources */,
 				BA5E004C1F97201E00FEBCC3 /* Mood.swift in Sources */,
+				CDD030D5222C1C6A005CE458 /* PullToRefreshViewController.swift in Sources */,
 				BA1485771F98411400662FDE /* CaptureSession.swift in Sources */,
 				BA5E00531F973B0700FEBCC3 /* ManagedObjectContextSettable.swift in Sources */,
 				BA56D5931F948EA30052F82D /* QRCodeScanViewController.swift in Sources */,
@@ -539,15 +551,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -589,15 +609,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -640,7 +668,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MJCompatible/MJCompatible-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -661,7 +690,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJCompatible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MJCompatible/MJCompatible-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -684,7 +714,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -709,7 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MooneyWang.MJScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

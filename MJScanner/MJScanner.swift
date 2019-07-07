@@ -12,45 +12,45 @@ import AVFoundation
 
 struct MJScannerMetaDataType {
 
-    static let UPCECode = AVMetadataObjectTypeUPCECode
-    static let Code39Code = AVMetadataObjectTypeCode39Code
-    static let Code39Mod43Code = AVMetadataObjectTypeCode39Mod43Code
-    static let EAN13Code = AVMetadataObjectTypeEAN13Code
-    static let EAN8Code = AVMetadataObjectTypeEAN8Code
-    static let Code93Code = AVMetadataObjectTypeCode93Code
-    static let Code128Code = AVMetadataObjectTypeCode128Code
-    static let PDF417Code = AVMetadataObjectTypePDF417Code
-    static let QRCode = AVMetadataObjectTypeQRCode
-    static let AztecCode = AVMetadataObjectTypeAztecCode
-    static let Interleaved2of5Code = AVMetadataObjectTypeInterleaved2of5Code
-    static let ITF14Code = AVMetadataObjectTypeITF14Code
-    static let DataMatrixCode = AVMetadataObjectTypeDataMatrixCode
+    static let UPCECode = AVMetadataObject.ObjectType.upce
+    static let Code39Code = AVMetadataObject.ObjectType.code39
+    static let Code39Mod43Code = AVMetadataObject.ObjectType.code39Mod43
+    static let EAN13Code = AVMetadataObject.ObjectType.ean13
+    static let EAN8Code = AVMetadataObject.ObjectType.ean8
+    static let Code93Code = AVMetadataObject.ObjectType.code93
+    static let Code128Code = AVMetadataObject.ObjectType.code128
+    static let PDF417Code = AVMetadataObject.ObjectType.pdf417
+    static let QRCode = AVMetadataObject.ObjectType.qr
+    static let AztecCode = AVMetadataObject.ObjectType.aztec
+    static let Interleaved2of5Code = AVMetadataObject.ObjectType.interleaved2of5
+    static let ITF14Code = AVMetadataObject.ObjectType.itf14
+    static let DataMatrixCode = AVMetadataObject.ObjectType.dataMatrix
 }
 
 class MJScanner: NSObject {
 
     private let session = AVCaptureSession()
-    private let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+    private let device = AVCaptureDevice.default(for: AVMediaType.video)
     private var input: AVCaptureDeviceInput?
     private let output = AVCaptureMetadataOutput()
 
     init(vedioPreView: UIView, metaDataObjectTypes: [String]) {
         super.init()
         do {
-            input = try AVCaptureDeviceInput(device: device)
+            input = try AVCaptureDeviceInput(device: device!)
         } catch {
             print("AVCaptureDeviceInput初始化error: \(error)")
         }
-        session.sessionPreset = AVCaptureSessionPresetHigh
+        session.sessionPreset = AVCaptureSession.Preset.high
         if session.canAddInput(input!) {
             session.addInput(input!)
         }
         if session.canAddOutput(output) {
             session.addOutput(output)
         }
-        output.metadataObjectTypes = metaDataObjectTypes
+//        output.metadataObjectTypes = metaDataObjectTypes
         output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-        let previewLayer = AVCaptureVideoPreviewLayer(session: session)
+        _ = AVCaptureVideoPreviewLayer(session: session)
 
     }
 }

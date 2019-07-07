@@ -33,8 +33,13 @@ class CameraView: UIView {
     }
 
     func setup(for previewLayer: AVCaptureVideoPreviewLayer) {
-        previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        previewLayer.videoGravity = AVLayerVideoGravity(rawValue: convertFromAVLayerVideoGravity(AVLayerVideoGravity.resizeAspectFill))
         layer.insertSublayer(previewLayer, at: 0)
         self.previewLayer = previewLayer
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVLayerVideoGravity(_ input: AVLayerVideoGravity) -> String {
+	return input.rawValue
 }

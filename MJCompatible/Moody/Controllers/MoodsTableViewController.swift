@@ -21,7 +21,7 @@ class MoodsTableViewController: UITableViewController {
         let request = Mood.sortedFetchRequest
         request.fetchBatchSize = 20
         request.returnsObjectsAsFaults = false
-        let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        _ = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
     }
 
     override func didReceiveMemoryWarning() {

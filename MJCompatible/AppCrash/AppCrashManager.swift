@@ -38,9 +38,9 @@ public class AppCrashManager: NSObject {
     /**
      エラーメッセージを表示
      */
-    static func showCrashInfo() {
+    @objc static func showCrashInfo() {
         let message = "アプリクラッシュエラーが発生いたしました。アプリを再起動しても解消しない場合は、お問い合わせ窓口までお問い合わせください。"
-        let messageDialog: UIAlertController = UIAlertController(title: "ご注意", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let messageDialog: UIAlertController = UIAlertController(title: "ご注意", message: message, preferredStyle: UIAlertController.Style.alert)
         messageDialog.modalPresentationStyle = .overFullScreen
         UIApplication.shared.currentViewController().present(messageDialog, animated: false, completion: nil)
         let runLoop = CFRunLoopGetCurrent()

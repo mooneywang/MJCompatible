@@ -21,7 +21,7 @@ class CaptureSession: NSObject {
     fileprivate weak var delegate: CaptureSessionDelegate!
 
     var isAuthorized: Bool {
-        return AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .authorized
+        return AVCaptureDevice.authorizationStatus(for: AVMediaType(rawValue: convertFromAVMediaType(AVMediaType.video))) == .authorized
     }
     var videoPreviewLayer: AVCaptureVideoPreviewLayer {
         return AVCaptureVideoPreviewLayer(session: session)
@@ -39,9 +39,9 @@ class CaptureSession: NSObject {
     }
 
     private func setup() {
-        session.sessionPreset = AVCaptureSessionPresetHigh
-        let discovery = AVCaptureDeviceDiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaTypeVideo, position: AVCaptureDevicePosition.back)
-        if let device = discovery?.devices.first {
+        session.sessionPreset = AVCaptureSession.Preset(rawValue: convertFromAVCaptureSessionPreset(AVCaptureSession.Preset.high))
+        let discovery = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType(rawValue: convertFromAVMediaType(AVMediaType.video)), position: AVCaptureDevice.Position.back)
+        if let device = discovery.devices.first {
             let input = try! AVCaptureDeviceInput(device: device)
             if session.canAddInput(input) {
                 session.addInput(input)
@@ -53,12 +53,12 @@ class CaptureSession: NSObject {
     }
 
     private func requestAuthorization() {
-        AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo) { authorized in
-            guard authorized else {
-                return
-            }
-            self.setup()
-        }
+//        AVCaptureDevice.requestAccess(for: convertFromAVMediaType(AVMediaType.video)) { authorized in
+//            guard authorized else {
+//                return
+//            }
+//            self.setup()
+//        }
     }
 
     func start() {
@@ -82,9 +82,9 @@ class CaptureSession: NSObject {
 
 extension CaptureSession: AVCapturePhotoCaptureDelegate {
 
-    func capture(_ captureOutput: AVCapturePhotoOutput,
-                 didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?,
-                 previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings,
+    func photoOutput(_ captureOutput: AVCapturePhotoOutput,
+                 didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?,
+                 previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings,
                  bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
         var image: UIImage?
         if let buf = photoSampleBuffer,
@@ -95,4 +95,14 @@ extension CaptureSession: AVCapturePhotoCaptureDelegate {
             self.delegate.captureSessionDidCapture(image)
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVMediaType(_ input: AVMediaType) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVCaptureSessionPreset(_ input: AVCaptureSession.Preset) -> String {
+	return input.rawValue
 }

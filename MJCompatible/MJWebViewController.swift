@@ -25,7 +25,7 @@ class MJWebViewController: UIViewController {
 
         // 添加进度条
         progressView.transform = CGAffineTransform(scaleX: 1.0, y: 1.5)
-        progressView.progressViewStyle = UIProgressViewStyle.default
+        progressView.progressViewStyle = UIProgressView.Style.default
         progressView.tintColor = .green
         progressView.trackTintColor = .white
         progressView.isHidden = true
@@ -63,7 +63,7 @@ extension MJWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         progressView.isHidden = false
-        view.bringSubview(toFront: progressView)
+        view.bringSubviewToFront(progressView)
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {

@@ -19,10 +19,10 @@ class AttributedStringViewController: UIViewController {
 
         let fontColor = UIColor(red: 103/255, green: 152/255, blue: 208/255, alpha: 1.0)
         let font = UIFont(name: "Hiragino Sans", size: 35) ?? UIFont()
-        let attrDict: [String: Any] = [NSForegroundColorAttributeName: fontColor,
-                                       NSFontAttributeName: font,
-                                       NSKernAttributeName: 10]
-        let attributedString = NSAttributedString(string: "9999", attributes: attrDict)
+        let attrDict: [String: Any] = [convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): fontColor,
+                                       convertFromNSAttributedStringKey(NSAttributedString.Key.font): font,
+                                       convertFromNSAttributedStringKey(NSAttributedString.Key.kern): 10]
+        let attributedString = NSAttributedString(string: "9999", attributes: convertToOptionalNSAttributedStringKeyDictionary(attrDict))
 
 
         codeLabel.attributedText = attributedString
@@ -44,4 +44,15 @@ class AttributedStringViewController: UIViewController {
     }
     */
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

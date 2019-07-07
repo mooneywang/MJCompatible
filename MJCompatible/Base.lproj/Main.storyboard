@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nZW-Ws-SGT">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nZW-Ws-SGT">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,14 +14,11 @@
         <scene sceneID="6jm-3W-2JO">
             <objects>
                 <viewController id="r7X-aX-Kl3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ivN-Cy-5YD"/>
-                        <viewControllerLayoutGuide type="bottom" id="gEa-jd-QeG"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tzd-4c-IYh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fhi-HP-Zep"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Grw-HU-A5s"/>
                 </viewController>
@@ -33,14 +30,11 @@
         <scene sceneID="4x9-mm-pgc">
             <objects>
                 <viewController storyboardIdentifier="MJWebViewController" hidesBottomBarWhenPushed="YES" id="1Ck-EG-8K9" customClass="MJWebViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J36-dA-iew"/>
-                        <viewControllerLayoutGuide type="bottom" id="KUp-yj-xIb"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3WD-ua-I6J">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JWe-Mq-yoK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGI-VU-c5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,16 +45,12 @@
         <scene sceneID="hH5-bh-Ytu">
             <objects>
                 <viewController id="yGM-Tn-njd" customClass="DemoViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OXn-cn-3z0"/>
-                        <viewControllerLayoutGuide type="bottom" id="VwU-8S-9la"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="osW-Sm-4j1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HAp-2v-GAM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="yGM-Tn-njd" id="EYg-1N-gQE"/>
@@ -70,11 +60,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HAp-2v-GAM" firstAttribute="leading" secondItem="osW-Sm-4j1" secondAttribute="leading" id="FK2-bz-UNd"/>
-                            <constraint firstAttribute="trailing" secondItem="HAp-2v-GAM" secondAttribute="trailing" id="QP6-O9-YwL"/>
-                            <constraint firstItem="HAp-2v-GAM" firstAttribute="top" secondItem="OXn-cn-3z0" secondAttribute="bottom" id="ggF-AP-q16"/>
-                            <constraint firstItem="VwU-8S-9la" firstAttribute="top" secondItem="HAp-2v-GAM" secondAttribute="bottom" id="rcK-3Q-ddJ"/>
+                            <constraint firstItem="HAp-2v-GAM" firstAttribute="leading" secondItem="nln-dD-ZAz" secondAttribute="leading" id="FK2-bz-UNd"/>
+                            <constraint firstItem="nln-dD-ZAz" firstAttribute="trailing" secondItem="HAp-2v-GAM" secondAttribute="trailing" id="QP6-O9-YwL"/>
+                            <constraint firstItem="HAp-2v-GAM" firstAttribute="top" secondItem="nln-dD-ZAz" secondAttribute="top" id="ggF-AP-q16"/>
+                            <constraint firstItem="nln-dD-ZAz" firstAttribute="bottom" secondItem="HAp-2v-GAM" secondAttribute="bottom" id="rcK-3Q-ddJ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="nln-dD-ZAz"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ihg-sY-Bkj"/>
                     <connections>
@@ -89,16 +80,12 @@
         <scene sceneID="zkA-Pf-A0e">
             <objects>
                 <viewController storyboardIdentifier="GifViewController" title="Gif" hidesBottomBarWhenPushed="YES" id="HhW-iI-6vc" customClass="GifViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MQc-qe-Bmz"/>
-                        <viewControllerLayoutGuide type="bottom" id="cj9-O6-Xut"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ULr-6C-uLe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="afM-a7-1yn">
-                                <rect key="frame" x="20" y="40" width="335" height="200"/>
+                                <rect key="frame" x="20" y="64" width="335" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="bM2-en-WPA"/>
                                 </constraints>
@@ -106,10 +93,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="afM-a7-1yn" firstAttribute="leading" secondItem="ULr-6C-uLe" secondAttribute="leading" constant="20" id="Vnn-6D-Pcz"/>
-                            <constraint firstItem="afM-a7-1yn" firstAttribute="top" secondItem="MQc-qe-Bmz" secondAttribute="bottom" constant="20" id="YQV-zR-qzE"/>
-                            <constraint firstAttribute="trailing" secondItem="afM-a7-1yn" secondAttribute="trailing" constant="20" id="xIH-9C-SwM"/>
+                            <constraint firstItem="afM-a7-1yn" firstAttribute="leading" secondItem="OZg-H0-i5m" secondAttribute="leading" constant="20" id="Vnn-6D-Pcz"/>
+                            <constraint firstItem="afM-a7-1yn" firstAttribute="top" secondItem="OZg-H0-i5m" secondAttribute="top" constant="20" id="YQV-zR-qzE"/>
+                            <constraint firstItem="OZg-H0-i5m" firstAttribute="trailing" secondItem="afM-a7-1yn" secondAttribute="trailing" constant="20" id="xIH-9C-SwM"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="OZg-H0-i5m"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="afM-a7-1yn" id="3lf-tE-FLo"/>
@@ -123,14 +111,11 @@
         <scene sceneID="92L-5T-sEg">
             <objects>
                 <viewController storyboardIdentifier="QRCodeScanViewController" hidesBottomBarWhenPushed="YES" id="5kj-8u-kCO" customClass="QRCodeScanViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4Ax-T6-k4z"/>
-                        <viewControllerLayoutGuide type="bottom" id="HSU-b2-rFb"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yPn-5U-pLX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="sBt-Oq-AzF"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztb-wZ-5rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,22 +126,18 @@
         <scene sceneID="2L9-nk-Wae">
             <objects>
                 <viewController storyboardIdentifier="MoodsRootViewController" hidesBottomBarWhenPushed="YES" id="DQD-Y0-GAS" customClass="MoodsRootViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iTO-aH-OOt"/>
-                        <viewControllerLayoutGuide type="bottom" id="tq4-Jj-bOD"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6lQ-6g-fr5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-du-1JV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="436"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="557"/>
                                 <connections>
                                     <segue destination="lS3-Vr-dVo" kind="embed" identifier="embedTableViewController" id="ZuA-Hw-lge"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ka6-F7-Gs9">
-                                <rect key="frame" x="0.0" y="456" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="601" width="375" height="211"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ka6-F7-Gs9" secondAttribute="height" multiplier="16:9" id="Fi2-nm-Vvy"/>
                                 </constraints>
@@ -167,14 +148,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mWx-du-1JV" firstAttribute="leading" secondItem="6lQ-6g-fr5" secondAttribute="leading" id="0hy-h7-Ip8"/>
-                            <constraint firstItem="mWx-du-1JV" firstAttribute="top" secondItem="iTO-aH-OOt" secondAttribute="bottom" id="31d-n0-DhH"/>
+                            <constraint firstItem="mWx-du-1JV" firstAttribute="leading" secondItem="frc-Xj-hDl" secondAttribute="leading" id="0hy-h7-Ip8"/>
+                            <constraint firstItem="mWx-du-1JV" firstAttribute="top" secondItem="frc-Xj-hDl" secondAttribute="top" id="31d-n0-DhH"/>
                             <constraint firstItem="ka6-F7-Gs9" firstAttribute="top" secondItem="mWx-du-1JV" secondAttribute="bottom" id="ade-01-2CZ"/>
-                            <constraint firstAttribute="trailing" secondItem="mWx-du-1JV" secondAttribute="trailing" id="l4f-QM-QgN"/>
+                            <constraint firstItem="frc-Xj-hDl" firstAttribute="trailing" secondItem="mWx-du-1JV" secondAttribute="trailing" id="l4f-QM-QgN"/>
                             <constraint firstAttribute="bottom" secondItem="ka6-F7-Gs9" secondAttribute="bottom" id="l5i-DT-nlb"/>
-                            <constraint firstAttribute="trailing" secondItem="ka6-F7-Gs9" secondAttribute="trailing" id="ocX-Zy-1WG"/>
-                            <constraint firstItem="ka6-F7-Gs9" firstAttribute="leading" secondItem="6lQ-6g-fr5" secondAttribute="leading" id="vz6-JD-ur6"/>
+                            <constraint firstItem="frc-Xj-hDl" firstAttribute="trailing" secondItem="ka6-F7-Gs9" secondAttribute="trailing" id="ocX-Zy-1WG"/>
+                            <constraint firstItem="ka6-F7-Gs9" firstAttribute="leading" secondItem="frc-Xj-hDl" secondAttribute="leading" id="vz6-JD-ur6"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="frc-Xj-hDl"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDz-ja-ka8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,14 +167,11 @@
         <scene sceneID="G18-KN-lBD">
             <objects>
                 <viewController id="nZW-Ws-SGT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2c0-hr-VRi"/>
-                        <viewControllerLayoutGuide type="bottom" id="zZa-cv-W83"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w1L-WF-KR6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="gnc-Ut-yjF"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZh-Un-ijI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +203,7 @@
                     <tabBarItem key="tabBarItem" title="Demo" id="2PD-xW-MP9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hmh-XZ-1tK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -240,16 +219,12 @@
         <scene sceneID="g2m-my-Ufm">
             <objects>
                 <viewController storyboardIdentifier="MoodsCameraViewController" hidesBottomBarWhenPushed="YES" id="HOU-Wr-k0D" customClass="MoodsCameraViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JDz-6a-qDc"/>
-                        <viewControllerLayoutGuide type="bottom" id="L81-ce-Kp0"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sK5-gE-xMA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-bg-6Co" customClass="CameraView" customModule="MJCompatible" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="167"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -259,10 +234,11 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ZD9-bg-6Co" secondAttribute="bottom" id="921-ty-3xG"/>
-                            <constraint firstItem="ZD9-bg-6Co" firstAttribute="top" secondItem="JDz-6a-qDc" secondAttribute="bottom" id="UfC-yV-x7N"/>
-                            <constraint firstAttribute="trailing" secondItem="ZD9-bg-6Co" secondAttribute="trailing" id="X5H-uy-YIY"/>
-                            <constraint firstItem="ZD9-bg-6Co" firstAttribute="leading" secondItem="sK5-gE-xMA" secondAttribute="leading" id="sod-Bg-72D"/>
+                            <constraint firstItem="ZD9-bg-6Co" firstAttribute="top" secondItem="QFo-Gc-ZUd" secondAttribute="top" id="UfC-yV-x7N"/>
+                            <constraint firstItem="QFo-Gc-ZUd" firstAttribute="trailing" secondItem="ZD9-bg-6Co" secondAttribute="trailing" id="X5H-uy-YIY"/>
+                            <constraint firstItem="ZD9-bg-6Co" firstAttribute="leading" secondItem="QFo-Gc-ZUd" secondAttribute="leading" id="sod-Bg-72D"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="QFo-Gc-ZUd"/>
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="ZD9-bg-6Co" id="msA-2l-8bh"/>
@@ -281,16 +257,12 @@
         <scene sceneID="gen-S7-CKJ">
             <objects>
                 <viewController storyboardIdentifier="AttributedStringViewController" hidesBottomBarWhenPushed="YES" id="Qio-97-J1n" customClass="AttributedStringViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8xN-d6-4zf"/>
-                        <viewControllerLayoutGuide type="bottom" id="c8M-x7-YBy"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k6N-HP-dGU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziD-Oz-Qwe">
-                                <rect key="frame" x="16" y="40" width="343" height="50"/>
+                                <rect key="frame" x="16" y="64" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Vai-sU-lfC"/>
                                 </constraints>
@@ -301,10 +273,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ziD-Oz-Qwe" firstAttribute="leading" secondItem="k6N-HP-dGU" secondAttribute="leading" constant="16" id="0MZ-R5-bTc"/>
-                            <constraint firstItem="ziD-Oz-Qwe" firstAttribute="top" secondItem="8xN-d6-4zf" secondAttribute="bottom" constant="20" id="QS4-MK-qLH"/>
-                            <constraint firstAttribute="trailing" secondItem="ziD-Oz-Qwe" secondAttribute="trailing" constant="16" id="U2N-te-jYb"/>
+                            <constraint firstItem="ziD-Oz-Qwe" firstAttribute="leading" secondItem="8Pz-3t-xSA" secondAttribute="leading" constant="16" id="0MZ-R5-bTc"/>
+                            <constraint firstItem="ziD-Oz-Qwe" firstAttribute="top" secondItem="8Pz-3t-xSA" secondAttribute="top" constant="20" id="QS4-MK-qLH"/>
+                            <constraint firstItem="8Pz-3t-xSA" firstAttribute="trailing" secondItem="ziD-Oz-Qwe" secondAttribute="trailing" constant="16" id="U2N-te-jYb"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Pz-3t-xSA"/>
                     </view>
                     <connections>
                         <outlet property="codeLabel" destination="ziD-Oz-Qwe" id="cJI-jJ-dsR"/>
@@ -314,12 +287,39 @@
             </objects>
             <point key="canvasLocation" x="2916" y="504"/>
         </scene>
+        <!--Pull To Refresh View Controller-->
+        <scene sceneID="nXG-GR-hqe">
+            <objects>
+                <viewController storyboardIdentifier="PullToRefreshViewController" hidesBottomBarWhenPushed="YES" id="BSr-2I-t8l" customClass="PullToRefreshViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HF3-tQ-1b3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L2z-QJ-d2g">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L2z-QJ-d2g" firstAttribute="top" secondItem="JMp-jA-1YK" secondAttribute="top" id="5Fz-5Y-ZfM"/>
+                            <constraint firstItem="JMp-jA-1YK" firstAttribute="trailing" secondItem="L2z-QJ-d2g" secondAttribute="trailing" id="dfd-aH-eSc"/>
+                            <constraint firstItem="JMp-jA-1YK" firstAttribute="bottom" secondItem="L2z-QJ-d2g" secondAttribute="bottom" id="haJ-HI-ORh"/>
+                            <constraint firstItem="L2z-QJ-d2g" firstAttribute="leading" secondItem="JMp-jA-1YK" secondAttribute="leading" id="uWb-sL-C7D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JMp-jA-1YK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2q2-Ts-IhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3801" y="625"/>
+        </scene>
         <!--Moods Table View Controller-->
         <scene sceneID="jDb-f6-7Oc">
             <objects>
                 <tableViewController storyboardIdentifier="MoodsTableViewController" hidesBottomBarWhenPushed="YES" id="lS3-Vr-dVo" customClass="MoodsTableViewController" customModule="MJCompatible" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="faf-Pe-shB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -327,7 +327,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WaF-CP-nEX" id="4zb-zq-X2g">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

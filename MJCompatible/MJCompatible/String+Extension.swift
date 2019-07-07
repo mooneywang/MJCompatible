@@ -25,7 +25,7 @@ extension String: MJCompatible {
 extension StringProxy {
 
     func length() -> Int {
-        return base.characters.count
+        return base.count
     }
 
     func substring(from: Int) -> String {
